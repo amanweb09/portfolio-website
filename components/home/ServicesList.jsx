@@ -48,7 +48,7 @@ const ServicesList = () => {
 
 
             <Link href='/web-services'><a
-                className="block mx-auto w-max h-max mb-4 hover:text-purple-500 font-bold">
+                className="block dark:text-gray-200 mx-auto w-max h-max mb-4 hover:text-purple-500 font-bold">
                 See all web services <span>&rsaquo;</span>
             </a></Link>
 

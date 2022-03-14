@@ -3,8 +3,8 @@ const GDHero = () => {
         <div className="sm:w-full canvas relative">
 
             <img
-                style={{ zIndex: '-1' }}
-                className="w-full h-8/12 absolute bottom-0 left-0"
+                style={{ zIndex: '1' }}
+                className="dark:opacity-50 w-full h-8/12 absolute bottom-0 left-0"
                 src="/images/building-bg.png"
                 alt="bg" />
 

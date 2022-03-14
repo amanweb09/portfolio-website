@@ -20,7 +20,7 @@ const index = () => {
   }, [])
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto dark:bg-slate-900">
       <Navbar />
 
       <Head>
@@ -39,8 +39,8 @@ const index = () => {
 
       <div
         data-aos="flip-down"
-        style={{ color: "#605D5D" }}
-        className="text-center font-bold mt-8">
+        // style={{ color: "#605D5D" }}
+        className="text-center font-bold mt-8 text-gray-600 dark:text-gray-200">
         WE ARE
       </div>
 
@@ -95,7 +95,7 @@ const index = () => {
         </Service>
       </section>
 
-      <Link href="/"><a className="w-max block mx-auto hover:text-purple-500 font-bold my-2">
+      <Link href="/"><a className="w-max dark:text-gray-200 block mx-auto hover:text-purple-500 font-bold my-2">
         All Graphic Services <span>&rsaquo;</span>
       </a></Link>
 

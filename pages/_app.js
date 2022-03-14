@@ -9,10 +9,12 @@ function MyApp({ Component, pageProps }) {
     const theme = window.localStorage.getItem('theme')
 
     if (!theme || theme === 'light') {
+      document.body.style.background = "#fff"
       themeToggle(theme)
       return;
     }
     if (theme === 'dark') {
+      document.body.style.background = "rgb(15, 23, 42)"
       themeToggle('dark')
       return;
     }
