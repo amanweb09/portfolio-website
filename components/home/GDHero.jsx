@@ -10,7 +10,7 @@ const GDHero = () => {
 
             <img
                 style={{ zIndex: '2' }}
-                className="absolute bottom-0 h-4/6"
+                className="absolute bottom-0 sm:h-4/6 h-3/6"
                 src="/images/giraffe.png"
                 alt="giraffe" />
 
@@ -29,6 +29,7 @@ const GDHero = () => {
             <h1
                 className="sm:text-8xl text-6xl font-bold absolute gd-text text-center">
                 <span
+                    data-aos="flip-down"
                     className="block stroke w-max relative mx-auto">
                     GRAPHIC
                     <img
@@ -41,7 +42,9 @@ const GDHero = () => {
                         src="/images/bird.png"
                         alt="bird" />
                 </span>
-                <span className="block graphic-text">DESIGNING</span>
+                <span
+                    data-aos="flip-up"
+                    className="block graphic-text">DESIGNING</span>
             </h1>
 
 

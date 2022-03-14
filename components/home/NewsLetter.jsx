@@ -20,6 +20,9 @@ const NewsLetter = () => {
                     height: 40vh;
                     border-yop: 1px solid #dcdcdc;
                 }
+                input {
+                    outline: none
+                }
                 @media only screen and (max-width: 450px) {
                     height: 30vh;
                 }

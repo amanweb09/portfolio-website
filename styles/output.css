@@ -655,6 +655,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0px;
 }
 
+.h-3\/6 {
+  height: 50%;
+}
+
 .w-60 {
   width: 15rem;
 }
@@ -796,6 +800,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.outline {
+  outline-style: solid;
+}
+
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -869,6 +877,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:h-80 {
     height: 20rem;
+  }
+
+  .sm\:h-4\/6 {
+    height: 66.666667%;
   }
 
   .sm\:w-full {

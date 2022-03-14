@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import GDHero from "../components/home/GDHero";
 import ServicesList from "../components/home/ServicesList";
 import Navbar from "../components/Navbar";
@@ -5,26 +6,47 @@ import Service from "../components/Service";
 import Link from 'next/link'
 import NewsLetter from "../components/home/NewsLetter";
 import Footer from "../components/home/Footer";
+import AOS from 'aos'
+import Head from 'next/head'
 
 const index = () => {
+
+  useEffect(() => {
+    AOS.init({
+      delay: 0,
+      duration: 400,
+      easing: 'ease'
+    })
+  }, [])
+
   return (
     <div className="container mx-auto">
       <Navbar />
 
+      <Head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>WebNaught - Web Services</title>
+      </Head>
+
       <div className="text-center sm:mt-20 mt-24">
         <span
+          data-aos="fade-down"
           className="hero-text font-bold sm:text-9xl sm:mt-0 mt-20 text-6xl block">WE BUILD.</span>
         <span
+          data-aos="fade-up"
           className="hero-text font-bold sm:mb-0 mb-14 block sm:text-9xl text-6xl">YOU MINT.</span>
       </div>
 
       <div
+        data-aos="flip-down"
         style={{ color: "#605D5D" }}
         className="text-center font-bold mt-8">
         WE ARE
       </div>
 
-      <div className="text-center font-bold sm:text-4xl text-2xl mt-4 small-text">
+      <div
+        data-aos="flip-up"
+        className="text-center font-bold sm:text-4xl text-2xl mt-4 small-text">
         WEB DEVELOPERS AND STARTUP ENTHUSIASTS
       </div>
 
