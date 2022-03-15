@@ -10,14 +10,17 @@ const index = () => {
             <main
                 className='w-full grid sm:grid-cols-3 grid-cols-1 pt-12'>
                 <ServicesBox
+                    link='/services/webdev_apps'
                     icon='/images/nodejs.png'
                     heading='web and app development'
                     para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
                 <ServicesBox
+                    link='/services/graphic_designing'
                     icon='/images/ai-gd.png'
                     heading='graphic designing'
                     para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
                 <ServicesBox
+                    link='/services/seo'
                     size={{ width: '50%' }}
                     icon='/images/seo.png'
                     heading='seo'

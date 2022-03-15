@@ -1,10 +1,15 @@
-const ServicesBox = ({ icon, heading, para, size }) => {
+import { useRouter } from 'next/router'
+
+const ServicesBox = ({ icon, heading, para, size, link }) => {
+
+    const router = useRouter()
+
     return (
         <div
+            onClick={() => router.push(link)}
             style={{
                 background: "#FCFCFC",
                 boxShadow: "inset 5px 6px 28px 1px rgba(36, 36, 36, 0.25)",
-                height: size ? size.height : "",
                 width: size ? size.width : "",
                 transition: '0.3s'
             }}
