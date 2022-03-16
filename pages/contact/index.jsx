@@ -4,6 +4,7 @@ import Head from "next/head";
 import SocialLinks from "../../components/contact/SocialLinks";
 import Navbar from '../../components/Navbar'
 import { useRouter } from 'next/router'
+import Success from "../../components/contact/Success";
 
 const index = () => {
 
@@ -14,6 +15,8 @@ const index = () => {
         email: "",
         message: ""
     })
+    const [notification, setNotification] = useState(false)
+    const [notificationType, setNotificationType] = useState('')
 
     function setInfo(name, value) {
         setUser({
@@ -35,23 +38,32 @@ const index = () => {
                     Accept: 'application/json'
                 }
             })
+            setNotificationType('success')
+            setNotification(true)
             setUser({
                 name: "",
                 email: "",
                 message: ""
             })
-            alert('Woohoooo! Your contact request has been saved!')
-
-            router.push('/')
 
         } catch (error) {
-            alert('Something went wrong...')
             console.log(error);
+            setNotification(true)
+            setNotificationType('error')
         }
     }
 
     return (
         <div className="container mx-auto">
+            {
+                notification ?
+                    notificationType === 'success' ?
+                        <Success type="success" setNotification={setNotification} />
+                        :
+                        notificationType === 'error' ?
+                            <Success type="fail" setNotification={setNotification} />
+                            : <></> : <></>
+            }
             <Head>
                 <title>Get in touch - WebNaught</title>
             </Head>
