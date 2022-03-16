@@ -1,10 +1,12 @@
-import { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/globals.css'
 import '../styles/output.css'
 import themeToggle from '../util/ThemeToggle'
+import { navlinkContext } from '../context/navlinks'
 
 function MyApp({ Component, pageProps }) {
 
+  const [activeLink, setActiveLink] = useState('')
   // useEffect(() => {
   //   const theme = window.localStorage.getItem('theme')
 
@@ -22,7 +24,11 @@ function MyApp({ Component, pageProps }) {
 
   // }, [])
 
-  return <Component {...pageProps} />
+  return (
+    <navlinkContext.Provider value={{ activeLink, setActiveLink }}>
+      <Component {...pageProps} />
+    </navlinkContext.Provider>
+  )
 }
 
 export default MyApp

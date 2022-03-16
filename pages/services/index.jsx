@@ -1,14 +1,22 @@
+// import { useEffect, useContext } from 'react';
 import Navbar from '../../components/Navbar'
 import ServicesBox from '../../components/ServicesBox';
+// import { navlinkContext } from '../../context/navlinks';
 
 const index = () => {
+
+    // const { setActiveLink } = useContext(navlinkContext)
+
+    // useEffect(() => {
+    //     setActiveLink('services') 
+    // }, [])
     return (
         <div
             className="container mx-auto">
             <Navbar />
 
             <main
-                className='w-full grid sm:grid-cols-3 grid-cols-1 pt-12'>
+                className='w-full grid sm:grid-cols-3 grid-cols-1 gap-4 pt-12'>
                 <ServicesBox
                     link='/services/webdev_apps'
                     icon='/images/nodejs.png'
@@ -28,7 +36,7 @@ const index = () => {
             </main>
 
             <div>
-                <h1 className='font-bold text-3xl text-center uppercase mt-16'>custom requirements??</h1>
+                <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase mt-16'>custom requirements??</h1>
                 <button
                     style={{
                         background: "linear-gradient(90deg, #FFE600 2.33%, #D7A803 94.13%)"

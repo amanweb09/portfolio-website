@@ -4,22 +4,22 @@ const React = () => {
     return (
         <div className="w-full min-h-screen pt-20 pb-6">
             <img
-                className="w-96 mx-auto block"
+                className="sm:w-96 w-72 mx-auto block"
                 src="/images/react.png"
                 alt="react" />
 
-            <h1 className="text-center font-bold text-4xl uppercase mt-4">single page applications</h1>
-            <h1 className="text-center font-bold text-lg uppercase mt-2 text-gray-500">powered by</h1>
-            <h1 className="text-center font-bold text-3xl uppercase mt-2 flex-center mb-4">
+            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-4">single page applications</h1>
+            <h1 className="text-center font-bold sm:text-lg text-base uppercase mt-2 text-gray-500">powered by</h1>
+            <h1 className="text-center font-bold sm:text-3xl text-2xl uppercase mt-2 flex-center mb-4">
                 <span className='react'>react</span>
                 <img
-                    className='w-10'
+                    className='sm:w-10 w-8'
                     src="/images/react-icon.png"
                     alt="" />
             </h1>
 
 
-            <p className="text-center text-gray-500 mt-2 px-12">
+            <p className="text-center text-gray-500 mt-2 px-12 sm:text-base text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 

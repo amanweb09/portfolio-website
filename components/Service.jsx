@@ -1,7 +1,7 @@
 const Service = ({ children, heading, para, btnCss }) => {
     return (
         <div
-            className="w-full py-4 sm:px-0 px-2">
+            className="w-full py-4 sm:px-0 px-2 my-4 sm:my-0">
             {children}
 
             <h1 className="dark:text-gray-100 text-center font-bold uppercase text-3xl">{heading}</h1>
