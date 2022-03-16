@@ -2,9 +2,11 @@ import Link from 'next/link'
 import ToggleSwitch from './ToggleSwitch';
 import { useContext } from 'react'
 import { navlinkContext } from '../context/navlinks';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
     const { activeLink } = useContext(navlinkContext)
+    const router = useRouter()
 
     return (
         <>
@@ -42,7 +44,9 @@ const Navbar = () => {
                 </ul>
 
                 <div className="flex-center">
-                    <button className='w-48 h-10 sm:block hidden bg-black text-white cursor-pointer'>GET IN TOUCH</button>
+                    <button
+                        onClick={() => router.push('/contact')}
+                        className='w-48 h-10 dark:bg-white dark:text-black sm:block hidden bg-black text-white cursor-pointer'>GET IN TOUCH</button>
                     {/* <div className='ml-4'>
                     <ToggleSwitch />
                     </div> */}
