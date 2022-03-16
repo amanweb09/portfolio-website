@@ -1,18 +1,15 @@
-// import { useEffect, useContext } from 'react';
+import Head from 'next/head';
 import Navbar from '../../components/Navbar'
 import ServicesBox from '../../components/ServicesBox';
-// import { navlinkContext } from '../../context/navlinks';
 
 const index = () => {
 
-    // const { setActiveLink } = useContext(navlinkContext)
-
-    // useEffect(() => {
-    //     setActiveLink('services') 
-    // }, [])
     return (
         <div
             className="container mx-auto">
+            <Head>
+                <title>Services - Webnaugth</title>
+            </Head>
             <Navbar />
 
             <main

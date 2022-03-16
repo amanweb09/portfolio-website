@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar";
+import Head from 'next/head'
 import Footer from "../../components/home/Footer";
 import Features from "../../components/webapps/Features";
 import MobileApp from "../../components/webapps/MobileApp";
@@ -8,6 +9,9 @@ import React from "../../components/webapps/React";
 const WebApps = () => {
     return (
         <div className="container mx-auto">
+            <Head>
+                <title>Web and development - Webnaught</title>
+            </Head>
             <Navbar />
 
             <section className="my-6">
