@@ -3,10 +3,15 @@ import '../styles/globals.css'
 import '../styles/output.css'
 import themeToggle from '../util/ThemeToggle'
 import { navlinkContext } from '../context/navlinks'
+import initFirebase from '../firebase/config'
 
 function MyApp({ Component, pageProps }) {
 
   const [activeLink, setActiveLink] = useState('')
+
+  useEffect(() => {
+    initFirebase()
+  }, [])
   // useEffect(() => {
   //   const theme = window.localStorage.getItem('theme')
 

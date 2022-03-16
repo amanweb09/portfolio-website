@@ -1,8 +1,55 @@
+import { useState } from "react";
+import axios from 'axios'
 import Head from "next/head";
 import SocialLinks from "../../components/contact/SocialLinks";
 import Navbar from '../../components/Navbar'
+import { useRouter } from 'next/router'
 
 const index = () => {
+
+    const router = useRouter()
+
+    const [user, setUser] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
+
+    function setInfo(name, value) {
+        setUser({
+            ...user,
+            [name]: value
+        })
+    }
+
+    async function submitForm() {
+        if (user.name === "" || user.email === "" || user.message === "") {
+            alert('Please fill the required fields!')
+            return;
+        }
+
+        try {
+            await axios.post(`${process.env.NEXT_PUBLIC_DB_URL}/contacts.json`, user, {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                }
+            })
+            setUser({
+                name: "",
+                email: "",
+                message: ""
+            })
+            alert('Woohoooo! Your contact request has been saved!')
+
+            router.push('/')
+
+        } catch (error) {
+            alert('Something went wrong...')
+            console.log(error);
+        }
+    }
+
     return (
         <div className="container mx-auto">
             <Head>
@@ -21,6 +68,9 @@ const index = () => {
             </label>
 
             <input
+                name="name"
+                value={user.name}
+                onChange={(e) => setInfo(e.target.name, e.target.value)}
                 type="text"
                 className="sm:w-10/12 w-11/12 h-12 input rounded-lg px-2 block mx-auto"
                 placeholder="Drop your name here ..." />
@@ -31,6 +81,9 @@ const index = () => {
             </label>
 
             <input
+                name="email"
+                value={user.email}
+                onChange={(e) => setInfo(e.target.name, e.target.value)}
                 type="email"
                 className="sm:w-10/12 w-11/12 h-12 input rounded-lg px-2 block mx-auto"
                 placeholder="Drop your email here ..." />
@@ -40,12 +93,16 @@ const index = () => {
             </label>
 
             <textarea
+                value={user.message}
+                onChange={(e) => setInfo(e.target.name, e.target.value)}
                 placeholder="Drop your requirements here ..."
                 name="message"
                 id="message"
                 className="input sm:w-10/12 w-11/12 block mx-auto h-56 rounded-lg p-4" />
 
-            <button className="btn w-64 h-12 font-bold text-white mt-12 mb-6 block mx-auto">
+            <button
+                onClick={submitForm}
+                className="btn w-64 h-12 font-bold text-white mt-12 mb-6 block mx-auto">
                 SUBMIT
             </button>
 
