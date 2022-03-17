@@ -1,14 +1,15 @@
 const Features = () => {
     return (
         <div
-            className="w-full relative py-6 wrapper">
+            className="w-full relative sm:py-6 py-2 wrapper">
 
-            <div className="w-full h-1/2 flex items-center justify-between my-6">
+            <div className="w-full h-1/2 flex items-center justify-between my-6 px-2">
                 <div
+                    data-aos="flip-right"
                     style={{ minHeight: '25vh' }}
                     className="flex-center flex-col w-5/12">
                     <h1
-                        className="sm:text-7xl text-4xl font-bold uppercase scalable">
+                        className="sm:text-7xl text-3xl font-bold uppercase scalable">
                         scalable
                     </h1>
                     <p className="text-xs text-gray-500 text-center">
@@ -19,7 +20,7 @@ const Features = () => {
                     style={{ minHeight: '25vh' }}
                     className="flex-center flex-col w-5/12 mt-20">
                     <h1
-                        className="sm:text-6xl text-3xl font-bold uppercase easy text-center">
+                        className="sm:text-6xl text-2xl font-bold uppercase easy text-center">
                         easy management
                     </h1>
                     <p className="text-xs text-gray-500 text-center">
@@ -28,12 +29,12 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className="w-full h-1/2 flex items-center justify-between mt-12">
+            <div className="w-full h-1/2 flex items-center justify-between sm:mt-12 mt-8 px-2">
                 <div
                     style={{ minHeight: '25vh' }}
                     className="flex-center flex-col w-5/12">
                     <h1
-                        className="sm:text-7xl text-4xl font-bold uppercase support text-center">
+                        className="sm:text-7xl text-3xl font-bold uppercase support text-center">
                         24x7 <br /> support
                     </h1>
                     <p className="text-xs text-gray-500 text-center">
@@ -45,7 +46,7 @@ const Features = () => {
                     style={{ minHeight: '25vh' }}
                     className="flex-center flex-col sm:w-5/12 w-4/12 mt-20">
                     <h1
-                        className="sm:text-7xl text-3xl font-bold uppercase ssl text-center">
+                        className="sm:text-7xl text-xl font-bold uppercase ssl text-center">
                         ssl + ddos <br /> protection
                     </h1>
                     <p className="text-xs text-gray-500 text-center">
@@ -54,14 +55,14 @@ const Features = () => {
                 </div>
             </div>
 
-              <h1
-                    className="sm:text-2xl text-xl mt-12 font-bold text-gray-500 flex-center">
-                    <span>AND MUCH MORE</span>
-                    <img
-                        className="w-6 ml-2"
-                        src="/images/flame.png"
-                        alt="flame" />
-                </h1>
+            <h1
+                className="sm:text-2xl text-xl mt-12 font-bold text-gray-500 flex-center">
+                <span>AND MUCH MORE</span>
+                <img
+                    className="w-6 ml-2"
+                    src="/images/flame.png"
+                    alt="flame" />
+            </h1>
 
             <style jsx>
                 {

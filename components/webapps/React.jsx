@@ -4,7 +4,7 @@ const React = () => {
     return (
         <div className="w-full min-h-screen pt-20 pb-6">
             <img
-                className="sm:w-96 w-72 mx-auto block"
+                className="sm:w-96 w-64 mx-auto block"
                 src="/images/react.png"
                 alt="react" />
 
@@ -19,7 +19,7 @@ const React = () => {
             </h1>
 
 
-            <p className="text-center text-gray-500 mt-2 px-12 sm:text-base text-sm">
+            <p className="text-center text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 

@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import GDHero from "../components/home/GDHero";
 import ServicesList from "../components/home/ServicesList";
 import Navbar from "../components/Navbar";
@@ -6,18 +5,9 @@ import Service from "../components/Service";
 import Link from 'next/link'
 import NewsLetter from "../components/home/NewsLetter";
 import Footer from "../components/home/Footer";
-import AOS from 'aos'
 import Head from 'next/head'
 
 const index = () => {
-
-  useEffect(() => {
-    AOS.init({
-      delay: 0,
-      duration: 400,
-      easing: 'ease'
-    })
-  }, [])
 
   return (
     <div className="container mx-auto dark:bg-slate-900">
