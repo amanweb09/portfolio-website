@@ -84,7 +84,7 @@ const index = () => {
                 value={user.name}
                 onChange={(e) => setInfo(e.target.name, e.target.value)}
                 type="text"
-                className="sm:w-10/12 w-11/12 h-12 input rounded-lg px-2 block mx-auto"
+                className="sm:w-10/12 w-11/12 h-12 input sm:rounded-lg rounded-none px-2 block mx-auto"
                 placeholder="Drop your name here ..." />
 
 
@@ -97,7 +97,7 @@ const index = () => {
                 value={user.email}
                 onChange={(e) => setInfo(e.target.name, e.target.value)}
                 type="email"
-                className="sm:w-10/12 w-11/12 h-12 input rounded-lg px-2 block mx-auto"
+                className="sm:w-10/12 w-11/12 h-12 input sm:rounded-lg rounded-none px-2 block mx-auto"
                 placeholder="Drop your email here ..." />
 
             <label htmlFor="message" className="font-semibold block uppercase mt-8 w-max mx-auto">
@@ -110,7 +110,7 @@ const index = () => {
                 placeholder="Drop your requirements here ..."
                 name="message"
                 id="message"
-                className="input sm:w-10/12 w-11/12 block mx-auto h-56 rounded-lg p-4" />
+                className="input sm:w-10/12 w-11/12 block mx-auto h-56 sm:rounded-lg rounded-none p-4" />
 
             <button
                 onClick={submitForm}
@@ -129,13 +129,23 @@ const index = () => {
                     text-fill-color: transparent;
                 }
                 .input {
-                    background: #FFFFFF;
-                    box-shadow: inset 4px 4px 25px 1px rgba(0, 0, 0, 0.25);
+                    // background: #FFFFFF;
+                    // box-shadow: inset 4px 4px 25px 1px rgba(0, 0, 0, 0.25);
                 }
                 .btn {
                     background: linear-gradient(89.82deg, #CF1512 23.02%, #AE00A7 68.17%)
                 }
-               
+               @media only screen and (max-width: 450px) {
+                   .input {
+                       box-shadow: none;
+                       border-bottom: 1px solid #000;
+                   }
+                   .input:focus {
+                       box-shadow: none;
+                       outline: none;
+                       border-bottom: 2px solid hotpink;
+                   }
+               }
             `
                 }
             </style>

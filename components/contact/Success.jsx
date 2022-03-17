@@ -8,7 +8,7 @@ const Success = ({ type, setNotification }) => {
         <div
             className="w-screen h-screen fixed inset-0 main flex-center">
 
-            <div className="w-96 h-96 bg-white rounded-xl relative flex-center flex-col">
+            <div className="sm:w-96 sm:h-96 w-80 h-80 bg-white rounded-xl relative flex-center flex-col">
                 <span
                     onClick={() => { type === 'success' ? router.push('/') : setNotification(false) }}
                     className="text-4xl absolute right-3 top-1 cursor-pointer hover:text-red-500">
@@ -19,11 +19,11 @@ const Success = ({ type, setNotification }) => {
                     type === 'success' &&
                     <>
                         <img
-                            className="w-32"
+                            className="sm:w-32 w-24"
                             src="/images/success.png"
                             alt="success" />
 
-                        <h1 className="font-bold text-lg uppercase text-green-500 text-center mt-4">Woohooo! Request saved successfully</h1>
+                        <h1 className="font-bold sm:text-lg text-base uppercase text-green-500 text-center mt-4">Woohooo! Request saved successfully</h1>
                         <p className="px-6 text-center text-gray-500 mt-2 text-sm">We'll reach you back within a couple of hours ...</p>
                     </>
                 }
