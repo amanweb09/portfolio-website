@@ -9,18 +9,18 @@ const MobileApp = () => {
                 src="/images/app-store.png"
                 alt="apps" />
 
-            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-8 next">mobile app development</h1>
+            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-8 next dark:text-white">mobile app development</h1>
 
-            <p className="text-center text-gray-500 mt-2 sm:px-12 px-6 text-sm sm:text-base">
+            <p className="text-center text-gray-500 dark:text-gray-200 mt-2 sm:px-12 px-6 text-sm sm:text-base">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 
-            <Link href="/"><a className="mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a className="mx-auto dark:text-white block w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire <span>&rsaquo;</span>
             </a></Link>
         </div>
 
-        <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
+        <div className="w-full h-4 mt-6 bg-gray-200 block dark:bg-slate-600"></div>
 
         <div className="w-full sm:pt-20 pt-10 pb-6">
             <img
@@ -28,18 +28,18 @@ const MobileApp = () => {
                 src="/images/restful.png"
                 alt="rest api" />
 
-            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-8 next">restful api</h1>
+            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-8 next dark:text-white">restful api</h1>
 
-            <p className="text-center text-gray-500 sm:text-base text-sm mt-2 sm:px-12 px-6">
+            <p className="text-center text-gray-500 dark:text-gray-300 sm:text-base text-sm mt-2 sm:px-12 px-6">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 
-            <Link href="/"><a className="mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a className="text-white mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire <span>&rsaquo;</span>
             </a></Link>
         </div>
 
-        <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
+        <div className="w-full h-4 mt-6 bg-gray-200 block dark:bg-slate-600"></div>
 
         <div className="w-full sm:pt-20 pt-10 pb-6">
             <img
@@ -47,18 +47,18 @@ const MobileApp = () => {
                 src="/images/management.png"
                 alt="management" />
 
-            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-8 next">website management</h1>
+            <h1 className="text-center dark:text-white font-bold sm:text-4xl text-3xl uppercase mt-8 next">website management</h1>
 
-            <p className="text-center text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
+            <p className="text-center dark:text-gray-300 text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 
-            <Link href="/"><a className="mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a className="text-white mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire <span>&rsaquo;</span>
             </a></Link>
         </div>
 
-        <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
+        <div className="w-full h-4 mt-6 bg-gray-200 block dark:bg-slate-600"></div>
         
         </>
     );

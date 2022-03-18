@@ -6,7 +6,7 @@ const index = () => {
 
     return (
         <div
-            className="container mx-auto">
+            className="container mx-auto dark:bg-slate-900">
             <Head>
                 <title>Services - Webnaugth</title>
             </Head>

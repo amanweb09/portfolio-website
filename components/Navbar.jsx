@@ -63,8 +63,17 @@ const Navbar = () => {
                 <div className="flex-center">
                     <button
                         onClick={() => router.push('/contact')}
-                        className='w-48 h-10 dark:bg-white dark:text-black sm:block hidden bg-black text-white cursor-pointer'>GET IN TOUCH</button>
-
+                        className='w-48 h-10 dark:bg-white dark:text-black sm:block hidden bg-black text-white cursor-pointer'>
+                        GET IN TOUCH
+                    </button>
+                    <div
+                        onClick={toggleWebsiteTheme}
+                        className='w-10 h-10 rounded-lg ham cursor-pointer bg-white dark:bg-slate-600 hidden sm:flex sm:items-center sm:justify-center ml-4'>
+                        <img
+                            className='w-6'
+                            src={theme === 'light' ? "/images/sun.png" : theme === 'dark' ? "/images/moon.png" : "/images/sun.png"}
+                            alt="light" />
+                    </div>
                 </div>
                 <div
                     onClick={toggleWebsiteTheme}

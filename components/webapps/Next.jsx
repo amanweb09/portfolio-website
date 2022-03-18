@@ -10,11 +10,11 @@ const Next = () => {
 
             <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-6 next">the best of javascript - next.js</h1>
 
-            <p className="text-center text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
+            <p className="text-center dark:text-gray-300 text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 
-            <Link href="/"><a className="mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a className="mx-auto dark:text-white block w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire <span>&rsaquo;</span>
             </a></Link>
 

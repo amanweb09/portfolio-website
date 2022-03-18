@@ -8,8 +8,8 @@ const React = () => {
                 src="/images/react.png"
                 alt="react" />
 
-            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-4">single page applications</h1>
-            <h1 className="text-center font-bold sm:text-lg text-base uppercase mt-2 text-gray-500">powered by</h1>
+            <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-4 dark:text-white">single page applications</h1>
+            <h1 className="text-center font-bold sm:text-lg text-base uppercase mt-2 text-gray-500 dark:text-gray-400">powered by</h1>
             <h1 className="text-center font-bold sm:text-3xl text-2xl uppercase mt-2 flex-center mb-4">
                 <span className='react'>react</span>
                 <img
@@ -19,11 +19,11 @@ const React = () => {
             </h1>
 
 
-            <p className="text-center text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
+            <p className="text-center text-gray-500 dark:text-gray-300 mt-2 sm:px-12 px-6 sm:text-base text-sm">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
             </p>
 
-            <Link href="/"><a className="mx-auto block w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a className="mx-auto block dark:text-white w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire <span>&rsaquo;</span>
             </a></Link>
 

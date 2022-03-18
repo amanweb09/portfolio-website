@@ -4,6 +4,9 @@
 * {
   font-family: "Poppins";
 }
+.dark {
+  background: rgb(15 23 42)
+}
 body::-webkit-scrollbar {
   width: 10px;
 }

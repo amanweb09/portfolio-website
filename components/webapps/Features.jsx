@@ -12,7 +12,7 @@ const Features = () => {
                         className="sm:text-7xl text-3xl font-bold uppercase scalable">
                         scalable
                     </h1>
-                    <p className="text-xs text-gray-500 text-center">
+                    <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
                     </p>
                 </div>
@@ -20,10 +20,10 @@ const Features = () => {
                     style={{ minHeight: '25vh' }}
                     className="flex-center flex-col w-5/12 mt-20">
                     <h1
-                        className="sm:text-6xl text-2xl font-bold uppercase easy text-center">
+                        className="sm:text-6xl text-xl font-bold uppercase easy text-center">
                         easy management
                     </h1>
-                    <p className="text-xs text-gray-500 text-center">
+                    <p className="text-xs text-gray-500 text-center dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
                     </p>
                 </div>
@@ -37,7 +37,7 @@ const Features = () => {
                         className="sm:text-7xl text-3xl font-bold uppercase support text-center">
                         24x7 <br /> support
                     </h1>
-                    <p className="text-xs text-gray-500 text-center">
+                    <p className="text-xs text-gray-500 text-center dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
                     </p>
                 </div>
@@ -49,14 +49,14 @@ const Features = () => {
                         className="sm:text-7xl text-xl font-bold uppercase ssl text-center">
                         ssl + ddos <br /> protection
                     </h1>
-                    <p className="text-xs text-gray-500 text-center">
+                    <p className="text-xs text-gray-500 text-center dark:text-gray-400">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
                     </p>
                 </div>
             </div>
 
             <h1
-                className="sm:text-2xl text-xl mt-12 font-bold text-gray-500 flex-center">
+                className="sm:text-2xl text-xl mt-12 font-bold text-gray-500 dark:text-gray-200 flex-center">
                 <span>AND MUCH MORE</span>
                 <img
                     className="w-6 ml-2"
