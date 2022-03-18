@@ -4,7 +4,7 @@ const Next = () => {
     return (
         <div className="w-full sm:pt-20 pt-10 pb-6">
             <img
-                className="sm:w-96 w-64 mx-auto block"
+                className="sm:w-96 w-56 mx-auto block"
                 src="/images/next.png"
                 alt="react" />
 

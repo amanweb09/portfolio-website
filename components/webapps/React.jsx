@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const React = () => {
     return (
-        <div className="w-full min-h-screen pt-20 pb-6">
+        <div className="w-full min-h-screen pt-16 pb-6">
             <img
                 className="sm:w-96 w-64 mx-auto block react-logo"
                 src="/images/react.png"

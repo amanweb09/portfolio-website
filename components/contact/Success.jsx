@@ -31,11 +31,11 @@ const Success = ({ type, setNotification }) => {
                     type === 'fail' &&
                     <>
                         <img
-                            className="w-24"
+                            className="sm:w-32 w-24"
                             src="/images/fail.png"
                             alt="fail" />
 
-                        <h1 className="font-bold text-lg uppercase text-red-500 text-center mt-4">Oh noo! something went wrong</h1>
+                        <h1 className="font-bold sm:text-lg text-base uppercase text-red-500 text-center mt-4">Oh noo! something went wrong</h1>
                         <p className="px-6 text-center text-gray-500 mt-2 text-sm">Please give it another shot ...</p>
                     </>
 
