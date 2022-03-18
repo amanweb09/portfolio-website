@@ -1,42 +1,59 @@
+import { useEffect, useState } from 'react';
 import Link from 'next/link'
-import ToggleSwitch from './ToggleSwitch';
-import { useContext } from 'react'
-import { navlinkContext } from '../context/navlinks';
 import { useRouter } from 'next/router';
+import ThemeToggle from '../util/ThemeToggle';
 
 const Navbar = () => {
-    const { activeLink } = useContext(navlinkContext)
     const router = useRouter()
+    const [theme, setTheme] = useState('light')
+
+    useEffect(() => {
+        setTheme(window.localStorage.getItem('theme'))
+    }, [])
+
+    function toggleWebsiteTheme() {
+        if (theme === 'light') {
+            setTheme('dark')
+            ThemeToggle('dark')
+            return;
+        }
+        if (theme == 'dark') {
+            setTheme('light')
+            ThemeToggle('light')
+            return;
+        }
+        setTheme('dark')
+        ThemeToggle('dark')
+        return;
+    }
 
     return (
         <>
             <div
                 style={{ height: '12vh' }}
-                className="w-full dark:text-gray-100 flex sm:flex-row flex-col sm:my-0 my-2 items-center justify-between">
-                <div className="font-bold text-lg">
+                className="w-full dark:text-gray-100 flex sm:mb-0 mb-2 items-center justify-between sm:px-0 px-2">
+
+                <div className='w-14 h-14 rounded-lg ham sm:hidden flex-center flex-col bg-white dark:bg-slate-600'>
+                    <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
+                    <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
+                    <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
+                </div>
+
+                <div className="font-bold text-lg ml-4 sm:ml-0">
                     WebNaught
                 </div>
 
-                <ul className="flex-center sm:mt-0 mt-4">
+                <ul className="sm:flex hidden items-center justify-center sm:mt-0 mt-4">
                     <li>
                         <Link href="/services"><a
-                            style={{
-                                color: activeLink === 'services' ? 'rgb(147, 51, 234)' : ""
-                            }}
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
                             Services
                         </a></Link>
                         <Link href="/services"><a
-                            style={{
-                                color: activeLink === 'works' ? 'rgb(147, 51, 234)' : ""
-                            }}
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
                             Our Works
                         </a></Link>
                         <Link href="/services"><a
-                            style={{
-                                color: activeLink === 'startup-assistance' ? 'rgb(147, 51, 234)' : ""
-                            }}
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
                             Startup Assistance
                         </a></Link>
@@ -47,13 +64,32 @@ const Navbar = () => {
                     <button
                         onClick={() => router.push('/contact')}
                         className='w-48 h-10 dark:bg-white dark:text-black sm:block hidden bg-black text-white cursor-pointer'>GET IN TOUCH</button>
-                    {/* <div className='ml-4'>
-                    <ToggleSwitch />
-                    </div> */}
+
                 </div>
-
+                <div
+                    onClick={toggleWebsiteTheme}
+                    className='w-10 h-10 rounded-lg ham bg-white dark:bg-slate-600 sm:hidden flex-center'>
+                    <img
+                        className='w-6'
+                        src={theme === 'light' ? "/images/sun.png" : theme === 'dark' ? "/images/moon.png" : "/images/sun.png"}
+                        alt="light" />
+                </div>
             </div>
-
+            <style jsx>
+                {
+                    `
+                    .ham {
+                        box-shadow: inset 4px 4px 7px 2px rgba(0, 0, 0, 0.15);
+                    }
+                    .bars {
+                        height: 6px;
+                    }
+                    .bars:nth-child(2) {
+                        margin: 5px 0;
+                    }
+    `
+                }
+            </style>
             {/* <div
                 style={{
                     height: '1px',

@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import '../styles/globals.css'
 import '../styles/output.css'
 import themeToggle from '../util/ThemeToggle'
-import { navlinkContext } from '../context/navlinks'
 import initFirebase from '../firebase/config'
 import AOS from 'aos'
+import { Provider, useDispatch } from 'react-redux'
+import { changeTheme } from '../Rx-store/themeSlice'
+import { store } from '../Rx-store'
 
 function MyApp({ Component, pageProps }) {
 
-  const [activeLink, setActiveLink] = useState('')
+  // const dispatch = useDispatch()
 
   useEffect(() => {
     initFirebase()
@@ -17,28 +19,24 @@ function MyApp({ Component, pageProps }) {
       duration: 400,
       easing: 'ease'
     })
+    const theme = window.localStorage.getItem('theme')
+
+    if (!theme || theme === 'light') {
+      themeToggle(theme)
+      // dispatch(changeTheme('light'))
+      return;
+    }
+    if (theme === 'dark') {
+      themeToggle('dark')
+      // dispatch(changeTheme('dark'))
+      return;
+    }
+    themeToggle('light')
+    // dispatch(changeTheme('light'))
   }, [])
-  // useEffect(() => {
-  //   const theme = window.localStorage.getItem('theme')
-
-  //   if (!theme || theme === 'light') {
-  //     document.body.style.background = "#fff"
-  //     themeToggle(theme)
-  //     return;
-  //   }
-  //   if (theme === 'dark') {
-  //     document.body.style.background = "rgb(15, 23, 42)"
-  //     themeToggle('dark')
-  //     return;
-  //   }
-  //   themeToggle('light')
-
-  // }, [])
 
   return (
-    <navlinkContext.Provider value={{ activeLink, setActiveLink }}>
       <Component {...pageProps} />
-    </navlinkContext.Provider>
   )
 }
 
