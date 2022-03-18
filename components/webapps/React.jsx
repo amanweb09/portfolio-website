@@ -4,7 +4,7 @@ const React = () => {
     return (
         <div className="w-full min-h-screen pt-20 pb-6">
             <img
-                className="sm:w-96 w-64 mx-auto block"
+                className="sm:w-96 w-64 mx-auto block react-logo"
                 src="/images/react.png"
                 alt="react" />
 
@@ -30,6 +30,14 @@ const React = () => {
             <style jsx>
                 {
                     `
+                    .react-logo {
+                        animation: reactAnimation 5s infinite linear 
+                    }
+                    @keyframes reactAnimation {
+                        100% {
+                            transform: rotateZ(360deg)
+                        }
+                    }
                         .react {
                           
 background: linear-gradient(90deg, #00D8FF 30.31%, #07B1CF 65.43%);

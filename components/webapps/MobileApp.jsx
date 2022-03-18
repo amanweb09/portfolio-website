@@ -20,6 +20,8 @@ const MobileApp = () => {
             </a></Link>
         </div>
 
+        <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
+
         <div className="w-full sm:pt-20 pt-10 pb-6">
             <img
                 className="sm:h-32 h-24 mx-auto block"
@@ -37,6 +39,8 @@ const MobileApp = () => {
             </a></Link>
         </div>
 
+        <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
+
         <div className="w-full sm:pt-20 pt-10 pb-6">
             <img
                 className="sm:h-48 h-40 mx-auto block"
@@ -53,6 +57,8 @@ const MobileApp = () => {
                 inquire <span>&rsaquo;</span>
             </a></Link>
         </div>
+
+        <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
         
         </>
     );

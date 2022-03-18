@@ -129,8 +129,8 @@ const index = () => {
                     text-fill-color: transparent;
                 }
                 .input {
-                    // background: #FFFFFF;
-                    // box-shadow: inset 4px 4px 25px 1px rgba(0, 0, 0, 0.25);
+                    background: #FFFFFF;
+                    box-shadow: inset 4px 4px 25px 1px rgba(0, 0, 0, 0.25);
                 }
                 .btn {
                     background: linear-gradient(89.82deg, #CF1512 23.02%, #AE00A7 68.17%)

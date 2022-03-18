@@ -35,12 +35,16 @@ const WebApps = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus voluptate culpa ut corrupti quasi ratione magnam obcaecati animi suscipit, sapiente repudiandae atque consectetur libero repellendus laboriosam ducimus saepe provident excepturi, officia doloremque accusantium voluptas aspernatur! Necessitatibus cum quisquam omnis. Aspernatur nostrum neque excepturi dicta ea at, enim pariatur eius!
                 </p>
             </section>
+            <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
 
             <Features />
+            <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
 
             <React />
+            <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
 
             <Next />
+            <div className="w-full h-4 mt-6 bg-gray-200 block"></div>
 
             <MobileApp />
 
