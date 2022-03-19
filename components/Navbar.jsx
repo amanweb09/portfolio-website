@@ -39,8 +39,10 @@ const Navbar = () => {
                     <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
                 </div>
 
-                <div className="font-bold text-lg ml-4 sm:ml-0">
-                    WebNaught
+                <div
+                    onClick={() => router.push('/')}
+                    className="font-bold text-lg ml-4 sm:ml-0">
+                    WEBMON
                 </div>
 
                 <ul className="sm:flex hidden items-center justify-center sm:mt-0 mt-4">
@@ -63,7 +65,7 @@ const Navbar = () => {
                 <div className="flex-center">
                     <button
                         onClick={() => router.push('/contact')}
-                        className='w-48 h-10 dark:bg-white dark:text-black sm:block hidden bg-black text-white cursor-pointer'>
+                        className='w-48 h-10 dark:bg-white dark:text-black sm:block hidden font-semibold bg-black text-white cursor-pointer'>
                         GET IN TOUCH
                     </button>
                     <div

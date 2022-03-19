@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import GDHero from "../components/home/GDHero";
 import ServicesList from "../components/home/ServicesList";
 import Navbar from "../components/Navbar";
@@ -8,6 +9,8 @@ import Footer from "../components/home/Footer";
 import Head from 'next/head'
 
 const index = () => {
+
+  const router = useRouter()
 
   return (
     <div className="container mx-auto dark:bg-slate-900">
@@ -40,7 +43,11 @@ const index = () => {
         WEB DEVELOPERS AND STARTUP ENTHUSIASTS
       </div>
 
-      <button className="hero-btn w-60 h-12 block mx-auto text-white font-semibold mt-8">GET IN TOUCH</button>
+      <button
+        onClick={() => router.push('/contact')}
+        className="hero-btn w-60 h-12 block mx-auto text-white font-semibold mt-8">
+        GET IN TOUCH
+      </button>
 
       <ServicesList />
 

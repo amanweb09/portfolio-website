@@ -69,13 +69,13 @@ const index = () => {
             </Head>
             <Navbar />
 
-            <h1 className="sm:text-6xl text-3xl font-bold text-center mt-24 mb-24 uppercase heading">get in touch</h1>
+            <h1 className="sm:text-6xl text-3xl font-bold text-center mt-24 sm:mb-24 mb-16 uppercase heading">get in touch</h1>
 
             <SocialLinks />
 
             <h1 className="text-2xl font-bold text-center mb-14 heading">OR</h1>
 
-            <label htmlFor="name" className="font-semibold block uppercase w-max mx-auto">
+            <label htmlFor="name" className="font-semibold block uppercase w-max mx-auto dark:text-white">
                 name <span className="text-red-500">*</span>
             </label>
 
@@ -84,11 +84,11 @@ const index = () => {
                 value={user.name}
                 onChange={(e) => setInfo(e.target.name, e.target.value)}
                 type="text"
-                className="sm:w-10/12 w-11/12 h-12 input sm:rounded-lg rounded-none px-2 block mx-auto"
+                className="sm:w-10/12 w-11/12 h-12 input sm:rounded-lg rounded-sm bg-white dark:text-white dark:bg-slate-600 px-2 block mx-auto"
                 placeholder="Drop your name here ..." />
 
 
-            <label htmlFor="email" className="font-semibold block uppercase mt-8 w-max mx-auto">
+            <label htmlFor="email" className="font-semibold block uppercase mt-8 w-max mx-auto dark:text-white">
                 Email <span className="text-red-500">*</span>
             </label>
 
@@ -97,10 +97,10 @@ const index = () => {
                 value={user.email}
                 onChange={(e) => setInfo(e.target.name, e.target.value)}
                 type="email"
-                className="sm:w-10/12 w-11/12 h-12 input sm:rounded-lg rounded-none px-2 block mx-auto"
+                className="sm:w-10/12 w-11/12 h-12 input sm:rounded-lg rounded-sm bg-white dark:text-white dark:bg-slate-600 px-2 block mx-auto"
                 placeholder="Drop your email here ..." />
 
-            <label htmlFor="message" className="font-semibold block uppercase mt-8 w-max mx-auto">
+            <label htmlFor="message" className="font-semibold block uppercase mt-8 w-max mx-auto dark:text-white">
                 Brief us about your requirements <span className="text-red-500">*</span>
             </label>
 
@@ -110,7 +110,7 @@ const index = () => {
                 placeholder="Drop your requirements here ..."
                 name="message"
                 id="message"
-                className="input sm:w-10/12 w-11/12 block mx-auto h-56 sm:rounded-lg rounded-none p-4" />
+                className="input sm:w-10/12 w-11/12 block mx-auto h-56 sm:rounded-lg rounded-sm bg-white dark:text-white dark:bg-slate-600  p-4" />
 
             <button
                 onClick={submitForm}
@@ -129,7 +129,6 @@ const index = () => {
                     text-fill-color: transparent;
                 }
                 .input {
-                    background: #FFFFFF;
                     box-shadow: inset 4px 4px 25px 1px rgba(0, 0, 0, 0.25);
                 }
                 .btn {

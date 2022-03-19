@@ -3,25 +3,25 @@ const GDHero = () => {
         <div className="sm:w-full canvas relative">
 
             <img
-                style={{ zIndex: '-1' }}
+                style={{ zIndex: '1' }}
                 className="dark:opacity-50 w-full h-8/12 absolute bottom-0 left-0"
                 src="/images/building-bg.png"
                 alt="bg" />
 
             <img
-                style={{ zIndex: '2' }}
+                style={{ zIndex: '3' }}
                 className="absolute bottom-0 sm:h-4/6 h-3/6"
                 src="/images/giraffe.png"
                 alt="giraffe" />
 
             <img
-                style={{ zIndex: '2' }}
+                style={{ zIndex: '4' }}
                 className="absolute bottom-0 right-0 h-2/6"
                 src="/images/elephant.png"
                 alt="elephant" />
 
             <img
-                style={{ zIndex: '3' }}
+                style={{ zIndex: '5' }}
                 className="absolute bottom-0 left-0 h-10 w-full"
                 src="/images/grass.png"
                 alt="grass" />
