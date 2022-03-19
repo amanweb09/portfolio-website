@@ -110,7 +110,7 @@ const index = () => {
                 placeholder="Drop your requirements here ..."
                 name="message"
                 id="message"
-                className="input sm:w-10/12 w-11/12 block mx-auto h-56 sm:rounded-lg rounded-sm bg-white dark:text-white dark:bg-slate-600  p-4" />
+                className="input sm:w-10/12 w-11/12 mt-2 block mx-auto h-56 sm:rounded-lg rounded-sm bg-white dark:text-white dark:bg-slate-600 p-4" />
 
             <button
                 onClick={submitForm}

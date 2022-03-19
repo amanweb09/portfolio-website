@@ -37,7 +37,7 @@ const Navbar = () => {
         <>
             <div
                 style={{ height: '12vh' }}
-                className="w-full dark:text-gray-100 flex sm:mb-0 mb-2 items-center justify-between sm:px-0 px-2">
+                className="w-full dark:text-gray-100 flex sm:mb-0 mb-2 sm:px-2 sm:rounded-sm shadow-lg items-center justify-between sm:px-0 px-2">
                 {
                     showMenu && <SideMenu setShowMenu={setShowMenu}/>
                 }

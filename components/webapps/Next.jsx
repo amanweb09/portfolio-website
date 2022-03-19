@@ -1,11 +1,22 @@
+import { useState, useEffect } from 'react';
 import Link from 'next/link'
 
 const Next = () => {
+
+    const [theme, setTheme] = useState('light')
+
+    useEffect(() => {
+        const _theme = window.localStorage.getItem('theme')
+        setTheme(_theme)
+    })
+    // const theme = window.localStorage.getItem('theme');
+
     return (
         <div className="w-full sm:pt-20 pt-10 pb-6">
             <img
-                className="sm:w-96 w-56 mx-auto block"
-                src="/images/next.png"
+                className="sm:w-40 w-32 mx-auto block"
+                // src={theme === 'dark' ? "/images/next-js-white.png" : "/images/next.png"}
+                src="https://www.rlogical.com/wp-content/uploads/2021/08/Rlogical-Blog-Images-thumbnail.png"
                 alt="react" />
 
             <h1 className="text-center font-bold sm:text-4xl text-3xl uppercase mt-6 next">the best of javascript - next.js</h1>
