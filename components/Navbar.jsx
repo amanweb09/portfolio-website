@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router';
 import ThemeToggle from '../util/ThemeToggle';
+import SideMenu from './SideMenu';
 
 const Navbar = () => {
     const router = useRouter()
     const [theme, setTheme] = useState('light')
+    const [showMenu, setShowMenu] = useState(false)
 
     useEffect(() => {
         setTheme(window.localStorage.getItem('theme'))
@@ -27,13 +29,21 @@ const Navbar = () => {
         return;
     }
 
+    function openMenu() {
+        setShowMenu(true)
+    }
+
     return (
         <>
             <div
                 style={{ height: '12vh' }}
                 className="w-full dark:text-gray-100 flex sm:mb-0 mb-2 items-center justify-between sm:px-0 px-2">
-
-                <div className='w-14 h-14 rounded-lg ham sm:hidden flex-center flex-col bg-white dark:bg-slate-600'>
+                {
+                    showMenu && <SideMenu setShowMenu={setShowMenu}/>
+                }
+                <div
+                    onClick={openMenu}
+                    className='w-14 h-14 rounded-lg ham sm:hidden flex-center flex-col bg-white dark:bg-slate-600'>
                     <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
                     <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
                     <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>

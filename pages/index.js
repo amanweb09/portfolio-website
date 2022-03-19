@@ -112,7 +112,7 @@ const index = () => {
             text-fill-color: transparent;
           }
           .small-text {
-            background: linear-gradient(180deg, #222222 0%, rgba(156, 156, 156, 0.53) 40.91%);
+            background: linear-gradient(180deg, #a0a0a0 0%, rgba(156, 156, 156, 0.53) 40.91%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -133,6 +133,7 @@ const index = () => {
           .hero-btn {
             background: linear-gradient(90deg, #CF1512 0%, #AE00A7 95.48%);
           }
+         
 
           `
         }
