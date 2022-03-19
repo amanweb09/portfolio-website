@@ -2,7 +2,7 @@ const NewsLetter = () => {
     return (
         <div
             className="w-full mt-6 sm:px-0 px-2 wrapper">
-            <h1 className="font-bold my-4 text-xl dark:text-gray-200">Subscribe to our newsletter</h1>
+            <h1 className="font-bold my-4 text-xl dark:text-gray-200">Drop your email, we'll contact you</h1>
 
             <input
                 style={{ borderBottom: '1px solid' }}
@@ -11,23 +11,28 @@ const NewsLetter = () => {
                 type="email" />
 
             <button
-                className="w-48 h-10 block mx-auto dark:bg-gray-100 dark:text-black bg-black text-white font-bold mt-10">Subscribe</button>
+                className="w-48 h-10 block mx-auto dark:bg-gray-100 dark:text-black bg-black text-white font-bold mt-10">
+                Submit
+            </button>
 
             <style jsx>
-        {
-            `
+                {
+                    `
                 .wrapper {
                     height: 40vh;
                     border-yop: 1px solid #dcdcdc;
                 }
                 input {
-                    outline: none
+                    outline: none;
+                }
+                input:focus {
+                    border-bottom: 2px solid hotpink;
                 }
                 @media only screen and (max-width: 450px) {
                     height: 30vh;
                 }
             `
-        }
+                }
             </style>
         </div>
     );

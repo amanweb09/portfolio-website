@@ -32,8 +32,8 @@ const index = () => {
                     para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
             </main>
 
-            <div>
-                <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase mt-16'>custom requirements??</h1>
+            <div className="mb-6 sm:mb-0">
+                <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase mt-16 dark:text-white'>custom requirements??</h1>
                 <button
                     style={{
                         background: "linear-gradient(90deg, #FFE600 2.33%, #D7A803 94.13%)"

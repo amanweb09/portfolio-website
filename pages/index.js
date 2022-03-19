@@ -7,6 +7,7 @@ import Link from 'next/link'
 import NewsLetter from "../components/home/NewsLetter";
 import Footer from "../components/home/Footer";
 import Head from 'next/head'
+import Review from '../components/home/Review';
 
 const index = () => {
 
@@ -52,22 +53,25 @@ const index = () => {
       <ServicesList />
 
 
-      <section>
-        <Service
-          heading="graphics for website and apps"
-          para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
-          btnText="View all graphics services"
-          btnCss={{
-            background: "linear-gradient(90deg, #FF0000 0%, #AA0404 95.48%)",
-            color: "#fff"
-          }}>
-          <img
-            className="sm:h-80 h-56 block mx-auto mt-8 mb-2"
-            alt="illustrations"
-            src="/images/standing-2.png" />
-        </Service>
-        <div className="w-full h-4 mt-6 bg-gray-200 dark:bg-slate-600 block"></div>
-      </section>
+      <Service
+        heading="graphics for website and apps"
+        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
+        btnText="View all graphics services"
+        btnCss={{
+          background: "linear-gradient(90deg, #FF0000 0%, #AA0404 95.48%)",
+          color: "#fff"
+        }}>
+        <img
+          className="sm:h-80 h-56 block mx-auto mt-8 mb-2"
+          alt="illustrations"
+          src="/images/standing-2.png" />
+      </Service>
+
+      <div className="w-full h-4 mt-6 bg-gray-200 dark:bg-slate-600 block"></div>
+
+      <Review />
+
+      <div className="w-full h-4 mt-6 bg-gray-200 dark:bg-slate-600 block"></div>
 
       <NewsLetter />
 

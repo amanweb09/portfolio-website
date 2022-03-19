@@ -23,10 +23,7 @@ const ServicesList = () => {
 
             <div className="container mx-auto flex-center sm:flex-row flex-col-reverse">
                 <div className="sm:w-4/6 w-full sm:px-0 px-4">
-                    <h1 className="sm:font-bold font-semibold uppercase sm:text-5xl text-xl text-gray-500 sm:text-left text-center ">
-                        <span className="sm:text-8xl text-6xl block text-gray-300">chill,</span>
-                        we'll manage <br /> everything ...
-                    </h1>
+                  
                     <p className="mt-4 dark:text-white sm:text-base text-sm sm:text-left text-center">
                         <span className="font-bold">From</span>
                         <span className="text-3xl font-bold text-pink-500 py-2 block">DESIGNING</span>
@@ -34,6 +31,8 @@ const ServicesList = () => {
                         <span className="text-3xl font-bold text-cyan-500 py-2 block">PRODUCTION</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia blanditiis ut laborum eius architecto officia. Perspiciatis adipisci expedita deserunt recusandae, quod at! Ipsam earum aut magni similique consequatur et!
                     </p>
+
+                    <h2 className="my-6 font-bold dark:text-gray-200 text-gray-500 text-center sm:text-left uppercase">We'll handle everything!</h2>
                 </div>
                 <div className="w-2/6">
                     <img
@@ -53,7 +52,11 @@ const ServicesList = () => {
                 <h1 className="text-center sm:text-6xl text-4xl dark:text-white uppercase font-bold mt-2 sm:mt-4">Wack <span className="culture">Culture</span></h1>
                 <h3 className="text-center sm:text-xl text-lg text-gray-500 dark:text-gray-200 mt-2 sm:mt-4 sm:mt-0 uppercase">an E-commerce website</h3>
 
-                <button className="uppercase w-80 h-12 mt-10 mb-6 bg-black dark:bg-white dark:text-black text-white block mx-auto">see our works</button>
+                <button
+                    className="flex-center uppercase w-80 h-12 mt-10 mb-6 bg-black dark:bg-white dark:text-black text-white block mx-auto">
+                    see our works
+                    <span className="text-2xl ml-2">&rsaquo;</span>
+                </button>
             </div>
 
             <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
