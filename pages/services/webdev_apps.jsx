@@ -26,7 +26,7 @@ const WebApps = () => {
             <section className="sm:mt-6 mt-12 sm:mb-6 mb-8">
                 <img
                     data-aos="flip-up"
-                    className="sm:w-4/6 w-5/6 block mx-auto"
+                    className="sm:w-4/6 w-full block mx-auto"
                     src="/images/website-mockup.png"
                     alt="mockup" />
 

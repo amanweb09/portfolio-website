@@ -9,48 +9,54 @@ const ServicesList = () => {
                     background: "linear-gradient(90deg, #12ADCF 0%, #046381 95.48%)",
                     color: "#fff"
                 }}
-                heading="Web application development"
+                btnText="View all web services"
+                heading="Website and app development"
                 para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!">
 
                 <img
                     className="block mx-auto w-2/3 mb-6 mt-14"
-                    src="/images/website-mockup.png"
+                    src="/images/website-mockup-2.png"
                     alt="website mockup" />
             </Service>
 
-            <Service
-                btnCss={{
-                    background: "linear-gradient(90deg, #FF0000 0%, #AA0404 95.48%)",
-                    color: "#fff"
-                }}
-                heading="Single-page application development"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!">
+            <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
 
+            <div className="container mx-auto flex-center sm:flex-row flex-col-reverse">
+                <div className="sm:w-4/6 w-full sm:px-0 px-4">
+                    <h1 className="sm:font-bold font-semibold uppercase sm:text-5xl text-xl text-gray-500 sm:text-left text-center ">
+                        <span className="sm:text-8xl text-6xl block text-gray-300">chill,</span>
+                        we'll manage <br /> everything ...
+                    </h1>
+                    <p className="mt-4 dark:text-white sm:text-base text-sm sm:text-left text-center">
+                        <span className="font-bold">From</span>
+                        <span className="text-3xl font-bold text-pink-500 py-2 block">DESIGNING</span>
+                        <span className="font-bold">To</span>
+                        <span className="text-3xl font-bold text-cyan-500 py-2 block">PRODUCTION</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia blanditiis ut laborum eius architecto officia. Perspiciatis adipisci expedita deserunt recusandae, quod at! Ipsam earum aut magni similique consequatur et!
+                    </p>
+                </div>
+                <div className="w-2/6">
+                    <img
+                        className="sm:w-80 w-96 sm:mb-0 mb-10 mt-10 sm:scale-100 scale-125"
+                        src="/images/docker.png"
+                        alt="docker" />
+                </div>
+            </div>
+
+            <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
+
+            <div className="container mx-auto pb-4 pt-12">
                 <img
-                    className="react block mx-auto sm:w-80 w-44 mb-6"
-                    src="/images/react.png"
-                    alt="single page apps" />
-            </Service>
+                    className="sm:h-96 h-72 sm:scale-125 scale-100 sm:mb-16 mb-8 mx-auto block"
+                    src="/images/website-mockup.png"
+                    alt="website mockup" />
+                <h1 className="text-center sm:text-6xl text-4xl dark:text-white uppercase font-bold mt-2 sm:mt-4">Wack <span className="culture">Culture</span></h1>
+                <h3 className="text-center sm:text-xl text-lg text-gray-500 dark:text-gray-200 mt-2 sm:mt-4 sm:mt-0 uppercase">an E-commerce website</h3>
 
-            <Service
-                btnCss={{
-                    background: "linear-gradient(90deg, #05E600 0%, #00A438 95.48%)",
-                    color: "#fff"
-                }}
-                heading="CUSTOM SERVER AND REST API"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!">
+                <button className="uppercase w-80 h-12 mt-10 mb-6 bg-black dark:bg-white dark:text-black text-white block mx-auto">see our works</button>
+            </div>
 
-                <img
-                    className="block mx-auto sm:w-80 w-64 mb-6 mt-10"
-                    src="/images/api.png"
-                    alt="single page apps" />
-            </Service>
-
-
-            <Link href='/web-services'><a
-                className="block dark:text-gray-200 mx-auto w-max h-max mb-4 hover:text-purple-500 font-bold">
-                See all web services <span>&rsaquo;</span>
-            </a></Link>
+            <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
 
 
             <style jsx>
@@ -64,7 +70,16 @@ const ServicesList = () => {
                                 transform: rotateZ(360deg)
                             }
                         }
-
+                        .text-main {
+                            background: linear-gradient(103.87deg, #00F5A0 16.81%, #73EFFF 67.62%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                        }
+                        .culture {
+                            color: #70a73c;
+                        }
 
                     `
                 }

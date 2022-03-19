@@ -51,50 +51,23 @@ const index = () => {
 
       <ServicesList />
 
-      <GDHero />
 
       <section>
         <Service
-          heading="ILLUSTRATIONS FOR WEB AND APPS"
+          heading="graphics for website and apps"
           para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
+          btnText="View all graphics services"
           btnCss={{
-            background: "linear-gradient(90deg, #12ADCF 0%, #046381 95.48%)",
+            background: "linear-gradient(90deg, #FF0000 0%, #AA0404 95.48%)",
             color: "#fff"
           }}>
           <img
-            className="sm:h-80 h-56 block mx-auto mt-8 sm:mb-0 mb-2"
+            className="sm:h-80 h-56 block mx-auto mt-8 mb-2"
             alt="illustrations"
             src="/images/standing-2.png" />
         </Service>
-
-        <Service
-          heading="CUSTOM ICON PACKS"
-          para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
-          btnCss={{
-            background: "linear-gradient(90deg, #0094FF 0%, #03F0FF 95.48%)"
-          }}>
-          <img
-            className="sm:h-80 h-56 block mx-auto mt-8"
-            alt="icons"
-            src="/images/icon-basket.png" />
-        </Service>
-
-        <Service
-          heading="GRAPHICS PACKAGE FOR WEB AND APP"
-          para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
-          btnCss={{
-            background: " linear-gradient(90deg, #FFE600 0%, #D7A803 95.48%)"
-          }}>
-          <img
-            className="sm:h-80 h-56 block mx-auto mt-8"
-            alt="package"
-            src="/images/Box.png" />
-        </Service>
+        <div className="w-full h-4 mt-6 bg-gray-200 dark:bg-slate-600 block"></div>
       </section>
-
-      <Link href="/"><a className="w-max dark:text-gray-200 block mx-auto hover:text-purple-500 font-bold my-2">
-        All Graphic Services <span>&rsaquo;</span>
-      </a></Link>
 
       <NewsLetter />
 

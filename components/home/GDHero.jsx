@@ -70,6 +70,7 @@ const GDHero = () => {
                         text-fill-color: transparent;
                     }
                     .gd-text {
+                        z-index: 10;
                         top: 50%;
                          left: 50%;
                           transform: translate(-50%, -50%)
