@@ -1616,6 +1616,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.dark .dark\:invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 @media (min-width: 640px) {
   .sm\:left-4 {
     left: 1rem;
@@ -1682,6 +1687,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:mb-16 {
     margin-bottom: 4rem;
+  }
+
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .sm\:block {
@@ -1774,6 +1783,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .sm\:w-48 {
+    width: 12rem;
+  }
+
+  .sm\:w-1\/6 {
+    width: 16.666667%;
   }
 
   .sm\:scale-100 {

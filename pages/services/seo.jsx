@@ -1,64 +1,50 @@
 import Navbar from "../../components/Navbar";
 import Service from "../../components/Service";
 import Footer from "../../components/home/Footer";
-import Head from "next/head";
+import Head from 'next/head'
 
-const GraphicDesigning = () => {
+const seo = () => {
     return (
         <div className="container mx-auto">
-
             <Head>
-                <title>Graphic Designing - Webmon</title>
+                <title>SEO - Webmon</title>
             </Head>
+            
             <Navbar />
             <section className="w-full sm:py-12">
-                <h1 className="sm:text-7xl text-3xl sm:mt-12 mt-20 sm:mb-0 mb-12 font-bold text-center text-teal-500 dark:text-teal-300 uppercase sm:px-12">
-                    The best for your <br /> app and website <br /> is here!
-                    <br />
-                    <img
-                        className="w-16 mt-6 block mx-auto"
-                        src="/images/globe.png"
-                        alt="globe" />
+                <img
+                    className="sm:w-2/6 w-5/6 sm:mt-6 mt-20 block mx-auto"
+                    src="/images/sales.png"
+                    alt="sales" />
+                <h1 className="sm:text-5xl text-3xl mt-12 sm:mb-0 mb-12 dark:text-white font-bold text-center uppercase sm:px-12">
+                    drive sales to your website.
                 </h1>
             </section>
 
             <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
-            
+
             <Service
-                heading="illustrations for website and app"
+                heading="technical seo"
                 para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
-                btnCss={{ background: "linear-gradient(90deg, #F582AE 0%, #FFE600 157.01%)" }}
+                btnCss={{ background: "linear-gradient(90deg, #79CBCA 0%, #77A1D3 157.01%)" }}
                 btnText="get quotation">
                 <img
-                    className="block mx-auto sm:w-2/6 w-4/6 my-4"
-                    src="/images/icon-design.png"
-                    alt="icon design" />
+                    className="block mx-auto sm:w-1/6 w-3/6 my-4"
+                    src="/images/technical-seo.png"
+                    alt="technical seo" />
             </Service>
 
             <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
 
             <Service
-                heading="custom icons"
+                heading="seo content development"
                 para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
-                btnCss={{ background: "linear-gradient(90deg, #F582AE 0%, #FFE600 157.01%)" }}
+                btnCss={{ background: "linear-gradient(90deg, #79CBCA 0%, #77A1D3 157.01%)" }}
                 btnText="get quotation">
                 <img
-                    className="block mx-auto w-2/6 my-4"
-                    src="/images/hands.png"
-                    alt="icon design" />
-            </Service>
-
-            <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
-
-            <Service
-                heading="logo designing"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
-                btnCss={{ background: "linear-gradient(90deg, #F582AE 0%, #FFE600 157.01%)" }}
-                btnText="get quotation">
-                <img
-                    className="block mx-auto sm:w-48 w-40 my-4"
-                    src="/images/logo-sample.png"
-                    alt="sample logo" />
+                    className="block mx-auto sm:w-1/6 w-3/6 mt-4 sm:mb-4 mb-8 dark:invert"
+                    src="/images/content-writing.png"
+                    alt="content writing" />
             </Service>
 
             <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
@@ -91,4 +77,4 @@ const GraphicDesigning = () => {
     );
 }
 
-export default GraphicDesigning;
+export default seo;
