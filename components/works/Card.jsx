@@ -1,20 +1,18 @@
-const Card = ({title, subTitle, image}) => {
+const Card = ({ title, subTitle, image }) => {
     return (
-        <div className="h-screen wrapper">
-            <h1 className="sm:text-6xl text-4xl font-bold uppercase text-white pt-20 pl-4">{title}</h1>
-            <h4 className="uppercase font-semibold text-gray-200 text-xl pl-4 mt-6">{subTitle}</h4>
+        <>
+            <section className='w-full'>
+                <img
+                    className='block mx-auto sm:w-3/6 w-4/6 shadow-xl mt-20 rounded-lg'
+                    src={image}
+                    alt="website" />
 
-            <style jsx>
-                {
-                    `
-                       .wrapper {
-                           background: linear-gradient(135deg, rgb(0,0,0,0.95), rgb(0,0,0,0.1)), url(${image}) no-repeat center;
-                           background-size: 100% 100%;
-                       }
-                    `
-                }
-            </style>
-        </div>
+                <h1 className='mt-10 font-bold text-center uppercase sm:text-5xl text-3xl dark:text-white'>{title}</h1>
+                <h4 className='text-center text-gray-500 uppercase sm:text-xl text-lg dark:text-gray-200'>{subTitle}</h4>
+            </section>
+
+            <div className="w-full h-4 mt-6 bg-gray-200 dark:bg-slate-600 block"></div>
+        </>
     );
 }
 

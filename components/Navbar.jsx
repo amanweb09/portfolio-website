@@ -51,7 +51,7 @@ const Navbar = () => {
 
                 <div
                     onClick={() => router.push('/')}
-                    className="font-bold text-lg ml-4 sm:ml-0">
+                    className="font-bold text-lg ml-4 sm:ml-0 cursor-pointer">
                     WEBMON
                 </div>
 
@@ -61,13 +61,13 @@ const Navbar = () => {
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
                             Services
                         </a></Link>
-                        <Link href="/services"><a
+                        <Link href="/works"><a
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
                             Our Works
                         </a></Link>
-                        <Link href="/services"><a
+                        <Link href="/"><a aria-disabled={true}
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
-                            Startup Assistance <span className='text-yellow-500 ml-2 font-semibold'>(launching soon)</span>
+                            Startup Assistance <span className='text-yellow-500 text-xs ml-2 font-semibold'>(launching soon)</span>
                         </a></Link>
                     </li>
                 </ul>
@@ -111,13 +111,6 @@ const Navbar = () => {
     `
                 }
             </style>
-            {/* <div
-                style={{
-                    height: '1px',
-                    background: "linear-gradient(101.91deg, #121FCF 25.64%, #CF1512 71.9%, #C2161F 71.9%)"
-                    // background: "#dcdcdc"
-                }}
-                className="w-full sm:hidden block mt-6"></div> */}
         </>
     );
 }

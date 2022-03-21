@@ -57,6 +57,7 @@ const index = () => {
         heading="graphics for website and apps"
         para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
         btnText="View all graphics services"
+        link="/services/graphic-designing"
         btnCss={{
           background: "linear-gradient(90deg, #FF0000 0%, #AA0404 95.48%)",
           color: "#fff"

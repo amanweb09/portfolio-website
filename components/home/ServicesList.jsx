@@ -1,7 +1,10 @@
 import Service from "../Service";
-import Link from 'next/link'
+import { useRouter } from "next/router";
 
 const ServicesList = () => {
+
+    const router = useRouter()
+
     return (
         <div>
             <Service
@@ -9,6 +12,7 @@ const ServicesList = () => {
                     background: "linear-gradient(90deg, #12ADCF 0%, #046381 95.48%)",
                     color: "#fff"
                 }}
+                link="/services/webdev_apps"
                 btnText="View all web services"
                 heading="Website and app development"
                 para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!">
@@ -58,6 +62,7 @@ const ServicesList = () => {
                 </h3>
 
                 <button
+                    onClick={() => router.push('/works')}
                     className="flex-center uppercase w-80 h-12 mt-10 mb-6 bg-black dark:bg-white dark:text-black text-white block mx-auto">
                     see our works
                     <span className="text-2xl ml-2">&rsaquo;</span>

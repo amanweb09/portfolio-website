@@ -36,6 +36,11 @@ const SideMenu = ({ setShowMenu }) => {
                         className="dark:text-white text-black block mx-auto font-bold w-max uppercase mb-6">
                         SEO
                     </a></Link>
+                    <Link href='/works'><a
+                        onClick={() => setShowMenu(false)}
+                        className="dark:text-white text-black block mx-auto font-bold w-max uppercase mb-6">
+                        Our works
+                    </a></Link>
                     <Link href='/services/seo'><a
                         onClick={() => setShowMenu(false)}
                         className="dark:text-white text-black block mx-auto font-bold w-max uppercase mb-6">
