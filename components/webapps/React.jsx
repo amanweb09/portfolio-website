@@ -30,21 +30,20 @@ const React = () => {
             <style jsx>
                 {
                     `
-                    .react-logo {
-                        animation: reactAnimation 5s infinite linear 
-                    }
-                    @keyframes reactAnimation {
-                        100% {
-                            transform: rotateZ(360deg)
+                        .react-logo {
+                            animation: reactAnimation 5s infinite linear 
                         }
-                    }
+                        @keyframes reactAnimation {
+                            100% {
+                                transform: rotateZ(360deg)
+                            }
+                        }
                         .react {
-                          
-background: linear-gradient(90deg, #00D8FF 30.31%, #07B1CF 65.43%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;  
+                            background: linear-gradient(90deg, #00D8FF 30.31%, #07B1CF 65.43%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;  
                         }
                     `
                 }

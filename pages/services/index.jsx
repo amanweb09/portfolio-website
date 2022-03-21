@@ -20,7 +20,7 @@ const index = () => {
                     heading='web and app development'
                     para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
                 <ServicesBox
-                    link='/services/graphic_designing'
+                    link='/services/graphic-designing'
                     icon='/images/ai-gd.png'
                     heading='graphic designing'
                     para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />

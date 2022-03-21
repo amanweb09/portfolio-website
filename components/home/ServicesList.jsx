@@ -23,12 +23,12 @@ const ServicesList = () => {
 
             <div className="container mx-auto flex-center sm:flex-row flex-col-reverse">
                 <div className="sm:w-4/6 w-full sm:px-0 px-4">
-                  
+
                     <p className="mt-4 dark:text-white sm:text-base text-sm sm:text-left text-center">
                         <span className="font-bold">From</span>
-                        <span className="text-3xl font-bold text-pink-500 py-2 block">DESIGNING</span>
+                        <span className="text-3xl font-bold text-pink-500 py-2 block hurricane">DESIGNING</span>
                         <span className="font-bold">To</span>
-                        <span className="text-3xl font-bold text-cyan-500 py-2 block">PRODUCTION</span>
+                        <span className="text-3xl font-bold text-cyan-500 py-2 block hurricane">PRODUCTION</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia blanditiis ut laborum eius architecto officia. Perspiciatis adipisci expedita deserunt recusandae, quod at! Ipsam earum aut magni similique consequatur et!
                     </p>
 
@@ -49,8 +49,13 @@ const ServicesList = () => {
                     className="sm:h-96 h-72 sm:scale-125 scale-100 sm:mb-16 mb-8 mx-auto block"
                     src="/images/website-mockup.png"
                     alt="website mockup" />
-                <h1 className="text-center sm:text-6xl text-4xl dark:text-white uppercase font-bold mt-2 sm:mt-4">Wack <span className="culture">Culture</span></h1>
-                <h3 className="text-center sm:text-xl text-lg text-gray-500 dark:text-gray-200 mt-2 sm:mt-4 sm:mt-0 uppercase">an E-commerce website</h3>
+                <h1 className="text-center sm:text-6xl text-4xl dark:text-white uppercase font-bold mt-2 sm:mt-4">
+                    Wack <span className="culture">Culture</span>
+                </h1>
+                <h3
+                    className="text-center sm:text-xl text-lg text-gray-500 dark:text-gray-200 mt-2 sm:mt-4 sm:mt-0 uppercase">
+                    an E-commerce website
+                </h3>
 
                 <button
                     className="flex-center uppercase w-80 h-12 mt-10 mb-6 bg-black dark:bg-white dark:text-black text-white block mx-auto">
@@ -65,6 +70,7 @@ const ServicesList = () => {
             <style jsx>
                 {
                     `
+                    @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
                         .react {
                             animation: reactAnimation 5s infinite linear 
                         }
@@ -82,6 +88,9 @@ const ServicesList = () => {
                         }
                         .culture {
                             color: #70a73c;
+                        }
+                        .hurricane {
+                            font-family: Hurricane, 'Poppins'
                         }
 
                     `
