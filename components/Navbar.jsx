@@ -67,7 +67,7 @@ const Navbar = () => {
                         </a></Link>
                         <Link href="/services"><a
                             className='dark:text-gray-100 sm:mx-6 mx-4 hover:text-purple-600 font-semibold sm:text-base text-sm'>
-                            Startup Assistance
+                            Startup Assistance <span className='text-yellow-500 ml-2 font-semibold'>(launching soon)</span>
                         </a></Link>
                     </li>
                 </ul>
