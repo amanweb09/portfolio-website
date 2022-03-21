@@ -50,7 +50,7 @@ const index = () => {
                 </div>
             </section>
 
-                        <Footer />
+            <Footer />
         </div>
     );
 }
