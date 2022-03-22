@@ -2,7 +2,7 @@ const SocialLinks = () => {
     return (
         <div className="w-full flex-center pb-12 px-4 sm:px-0">
             <div
-                onClick={() => window.location.href = 'mailto:amankhanna224466@gmail.com'}
+                onClick={() => window.location.href = 'mailto:webmon.india@gmail.com'}
                 className="flex-center flex-col cursor-pointer mx-4 hover bg-white shadow-lg dark:bg-slate-600 dark:text-white p-2 w-32 h-32 rounded-xl">
                 <img
                     className="w-16"
