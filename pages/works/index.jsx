@@ -4,7 +4,7 @@ import Card from '../../components/works/Card';
 import Footer from '../../components/home/Footer';
 import { useRouter } from 'next/router'
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -53,4 +53,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default Index;

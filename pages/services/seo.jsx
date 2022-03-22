@@ -4,7 +4,7 @@ import Footer from "../../components/home/Footer";
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-const seo = () => {
+const Seo = () => {
 
     const router = useRouter()
     
@@ -88,4 +88,4 @@ const seo = () => {
     );
 }
 
-export default seo;
+export default Seo;

@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import ServicesBox from '../../components/ServicesBox';
 import { useRouter } from 'next/router';
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -64,4 +64,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default Index;

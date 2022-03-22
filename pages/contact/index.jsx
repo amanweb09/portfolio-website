@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar'
 import { useRouter } from 'next/router'
 import Success from "../../components/contact/Success";
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -154,4 +154,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default Index;

@@ -7,7 +7,7 @@ import Footer from "../components/home/Footer";
 import Head from 'next/head'
 import Review from '../components/home/Review';
 
-const index = () => {
+const Index = () => {
 
   const router = useRouter()
 
@@ -122,4 +122,4 @@ const index = () => {
   );
 }
 
-export default index;
+export default Index;
