@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-import ThemeToggle from '../util/ThemeToggle';
+import ThemeToggle from '../util/themeToggle';
 import SideMenu from './SideMenu';
 
 const Navbar = () => {

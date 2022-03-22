@@ -64,7 +64,7 @@ const ServicesList = () => {
                     Wack <span className="culture">Culture</span>
                 </h1>
                 <h3
-                    className="text-center sm:text-xl text-lg text-gray-500 dark:text-gray-200 mt-2 sm:mt-4 sm:mt-0 uppercase">
+                    className="text-center sm:text-xl text-lg text-gray-500 dark:text-gray-200 mt-2 sm:mt-4 uppercase">
                     an E-commerce website
                 </h3>
 

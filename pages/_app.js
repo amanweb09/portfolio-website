@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import '../styles/globals.css'
 import '../styles/output.css'
-import themeToggle from '../util/ThemeToggle'
+import themeToggle from '../util/themeToggle'
 import initFirebase from '../firebase/config'
 import AOS from 'aos'
 
