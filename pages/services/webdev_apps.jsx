@@ -7,8 +7,13 @@ import MobileApp from "../../components/webapps/MobileApp";
 import Next from "../../components/webapps/Next";
 import React from "../../components/webapps/React";
 import AOS from 'aos'
+import { useRouter } from 'next/router'
+
 
 const WebApps = () => {
+
+    const router = useRouter()
+
     useEffect(() => {
         AOS.init({
             delay: 0,
@@ -19,7 +24,7 @@ const WebApps = () => {
     return (
         <div className="container mx-auto dark:bg-slate-900">
             <Head>
-                <title>Web and development - Webnaught</title>
+                <title>Web and development - Webmon</title>
             </Head>
             <Navbar />
 
@@ -54,6 +59,7 @@ const WebApps = () => {
             <div className="my-16">
                 <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase dark:text-white'>custom requirements??</h1>
                 <button
+                    onClick={() => router.push('/contact')}
                     style={{
                         background: "linear-gradient(90deg, #FFE600 2.33%, #D7A803 94.13%)"
                     }}

@@ -1,9 +1,7 @@
 import { useRouter } from 'next/router'
-import GDHero from "../components/home/GDHero";
 import ServicesList from "../components/home/ServicesList";
 import Navbar from "../components/Navbar";
 import Service from "../components/Service";
-import Link from 'next/link'
 import NewsLetter from "../components/home/NewsLetter";
 import Footer from "../components/home/Footer";
 import Head from 'next/head'
@@ -19,7 +17,7 @@ const index = () => {
 
       <Head>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <title>WebNaught - Web Services</title>
+        <title>Webmon - Web Development Company in India</title>
       </Head>
 
       <div className="text-center sm:mt-20 mt-24">

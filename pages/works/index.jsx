@@ -2,8 +2,12 @@ import Navbar from '../../components/Navbar'
 import Head from 'next/head'
 import Card from '../../components/works/Card';
 import Footer from '../../components/home/Footer';
+import { useRouter } from 'next/router'
 
 const index = () => {
+
+    const router = useRouter()
+
     return (
         <div className="container mx-auto">
             <Head>
@@ -37,6 +41,7 @@ const index = () => {
             <div className="py-12">
                 <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase dark:text-white'>and many more!</h1>
                 <button
+                    onClick={() => router.push('/contact')}
                     style={{
                         background: "linear-gradient(90deg, #FFE600 2.33%, #D7A803 94.13%)"
                     }}

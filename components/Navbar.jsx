@@ -37,9 +37,9 @@ const Navbar = () => {
         <>
             <div
                 style={{ height: '12vh' }}
-                className="w-full dark:text-gray-100 flex sm:mb-0 mb-2 sm:px-2 sm:rounded-sm shadow-lg items-center justify-between sm:px-0 px-2">
+                className="w-full dark:text-gray-100 flex sm:mb-0 mb-2 sm:px-2 sm:rounded-sm shadow-lg items-center justify-between relative px-2">
                 {
-                    showMenu && <SideMenu setShowMenu={setShowMenu}/>
+                    showMenu && <SideMenu setShowMenu={setShowMenu} />
                 }
                 <div
                     onClick={openMenu}
@@ -49,11 +49,17 @@ const Navbar = () => {
                     <div className='bg-black bars w-8 rounded-full dark:bg-white'></div>
                 </div>
 
-                <div
+                <img
+                    src="/images/logo.png"
+                    alt="logo"
                     onClick={() => router.push('/')}
-                    className="font-bold text-lg ml-4 sm:ml-0 cursor-pointer">
-                    WEBMON
-                </div>
+                    className="cursor-pointer sm:w-16 w-12 sm:hidden block absolute logo" />
+
+                <img
+                    src="/images/logo.png"
+                    alt="logo"
+                    onClick={() => router.push('/')}
+                    className="cursor-pointer sm:w-16 w-12 sm:block hidden" />
 
                 <ul className="sm:flex hidden items-center justify-center sm:mt-0 mt-4">
                     <li>
@@ -107,6 +113,11 @@ const Navbar = () => {
                     }
                     .bars:nth-child(2) {
                         margin: 5px 0;
+                    }
+                    .logo {
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%)
                     }
     `
                 }

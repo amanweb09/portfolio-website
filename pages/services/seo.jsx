@@ -2,14 +2,18 @@ import Navbar from "../../components/Navbar";
 import Service from "../../components/Service";
 import Footer from "../../components/home/Footer";
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const seo = () => {
+
+    const router = useRouter()
+    
     return (
         <div className="container mx-auto">
             <Head>
                 <title>SEO - Webmon</title>
             </Head>
-            
+
             <Navbar />
             <section className="w-full sm:py-12">
                 <img
@@ -58,6 +62,7 @@ const seo = () => {
             <div className="mb-6 sm:pb-0 pb-12">
                 <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase mt-16 dark:text-white'>custom requirements??</h1>
                 <button
+                    onClick={() => router.push('/contact')}
                     style={{
                         background: "linear-gradient(90deg, #FFE600 2.33%, #D7A803 94.13%)"
                     }}

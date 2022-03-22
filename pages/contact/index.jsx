@@ -67,7 +67,7 @@ const index = () => {
                             : <></> : <></>
             }
             <Head>
-                <title>Get in touch - WebNaught</title>
+                <title>Get in touch - Webmon</title>
             </Head>
             <Navbar />
 

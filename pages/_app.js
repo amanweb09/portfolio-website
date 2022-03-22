@@ -4,13 +4,9 @@ import '../styles/output.css'
 import themeToggle from '../util/ThemeToggle'
 import initFirebase from '../firebase/config'
 import AOS from 'aos'
-import { Provider, useDispatch } from 'react-redux'
-import { changeTheme } from '../Rx-store/themeSlice'
 
 
 function MyApp({ Component, pageProps }) {
-
-  // const dispatch = useDispatch()
 
   useEffect(() => {
     initFirebase()
@@ -23,16 +19,13 @@ function MyApp({ Component, pageProps }) {
 
     if (!theme || theme === 'light') {
       themeToggle(theme)
-      // dispatch(changeTheme('light'))
       return;
     }
     if (theme === 'dark') {
       themeToggle('dark')
-      // dispatch(changeTheme('dark'))
       return;
     }
     themeToggle('light')
-    // dispatch(changeTheme('light'))
   }, [])
 
   return (

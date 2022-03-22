@@ -1,14 +1,17 @@
 import Head from 'next/head';
 import Navbar from '../../components/Navbar'
 import ServicesBox from '../../components/ServicesBox';
+import { useRouter } from 'next/router';
 
 const index = () => {
+
+    const router = useRouter()
 
     return (
         <div
             className="container mx-auto dark:bg-slate-900">
             <Head>
-                <title>Services - Webnaugth</title>
+                <title>Services - Webmon</title>
             </Head>
             <Navbar />
 
@@ -41,6 +44,7 @@ const index = () => {
             <div className="mb-6 sm:mb-0">
                 <h1 className='font-bold sm:text-3xl text-2xl text-center uppercase mt-16 dark:text-white'>custom requirements??</h1>
                 <button
+                onClick={() => router.push('/contact')}
                     style={{
                         background: "linear-gradient(90deg, #FFE600 2.33%, #D7A803 94.13%)"
                     }}

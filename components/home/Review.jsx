@@ -9,7 +9,7 @@ const Review = () => {
                 alt="quote" />
 
             <div className="w-full flex-center flex-col">
-                <h1 className="uppercase font-bold text-lg dark:text-white">aman khanna</h1>
+                <h1 className="uppercase font-bold text-lg dark:text-white">Aman Khanna</h1>
                 <div className="flex-center">
                     <img
                         className="w-8"
@@ -34,7 +34,7 @@ const Review = () => {
                 </div>
 
                 <p className="sm:w-4/6 dark:text-gray-200 w-full px-4 sm:px-0 block mx-auto text-gray-600 text-center my-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem exercitationem earum deserunt doloremque illo dolorum enim aliquam. Ad repudiandae accusamus officiis mollitia quia. Quis dolorem aut aliquam quisquam fugiat asperiores ipsum perferendis delectus ullam illo quos consequatur minima animi accusamus possimus a earum id, maiores voluptas. Aperiam, provident doloribus.
+                    Professional service. I got my website built and got the website much above my expectations!
                 </p>
             </div>
 
