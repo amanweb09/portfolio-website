@@ -6,7 +6,7 @@ import initFirebase from '../firebase/config'
 import AOS from 'aos'
 import { Provider, useDispatch } from 'react-redux'
 import { changeTheme } from '../Rx-store/themeSlice'
-import { store } from '../Rx-store'
+
 
 function MyApp({ Component, pageProps }) {
 
