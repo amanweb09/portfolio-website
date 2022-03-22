@@ -26,7 +26,7 @@ const React = () => {
             </p>
 
             <Link href="/"><a className="mx-auto block dark:text-white w-max font-bold uppercase mt-6 hover:text-purple-500">
-                inquire <span>&rsaquo;</span>
+                inquire &rsaquo;
             </a></Link>
 
             <style jsx>

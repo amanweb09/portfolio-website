@@ -72,7 +72,7 @@ const ServicesList = () => {
                     onClick={() => router.push('/works')}
                     className="flex-center uppercase w-80 h-12 mt-10 mb-6 bg-black dark:bg-white dark:text-black text-white block mx-auto">
                     see our works
-                    <span className="text-2xl ml-2">&rsaquo;</span>
+                    &rsaquo;
                 </button>
             </div>
 

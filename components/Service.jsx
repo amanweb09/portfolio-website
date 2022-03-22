@@ -19,8 +19,7 @@ const Service = ({ children, heading, para, btnCss, btnText, link }) => {
                 style={btnCss}
                 onClick={() => link ? router.push(link) : router.push('/contact')}
                 className="w-72 h-12 block mx-auto mt-8 mb-4 uppercase flex-center">
-                {btnText}
-                <span className="text-2xl ml-2">&rsaquo;</span>
+                {btnText}&rsaquo;
             </button>
         </div>
     );
