@@ -55,7 +55,10 @@ const index = () => {
 
       <Service
         heading="graphics for website and apps"
-        para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!"
+        para="
+        Discard those bland graphics and give your website the grapics it deserves! We craft extravagant graphics 
+        and illustrations for your website, app, or social media so you don't miss a chance of conversion!
+        "
         btnText="View all graphics services"
         link="/services/graphic-designing"
         btnCss={{

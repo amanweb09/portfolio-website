@@ -33,7 +33,9 @@ const WebApps = () => {
                 <h1 
                 className="text-center dark:text-white font-bold uppercase sm:text-2xl text-xl mt-4">responsive websites</h1>
                 <p className="text-gray-600 dark:text-gray-400 text-center font-semibold sm:text-sm text-xs px-6 sm:py-2 py-0 sm:mt-0 mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus voluptate culpa ut corrupti quasi ratione magnam obcaecati animi suscipit, sapiente repudiandae atque consectetur libero repellendus laboriosam ducimus saepe provident excepturi, officia doloremque accusantium voluptas aspernatur! Necessitatibus cum quisquam omnis. Aspernatur nostrum neque excepturi dicta ea at, enim pariatur eius!
+                    Mobile-friendly websites, designed to maximize reach and conversion rate. Designed to run on any device, 
+                    your website will be loaded with tons of features like payment gateway, order tracking, and much more.
+                    We cater to every niche, being it e-commerce, blog sites, restaurants, portals, portfolios, and many more!
                 </p>
             </section>
             <div className="w-full h-4 mt-6 bg-gray-200 dark:bg-slate-600 block"></div>

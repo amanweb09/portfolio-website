@@ -23,10 +23,13 @@ const GraphicDesigning = () => {
             </section>
 
             <div className="w-full h-4 my-6 bg-gray-200 dark:bg-slate-600 block"></div>
-            
+
             <Service
                 heading="illustrations for website and app"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
+                para="
+                Discard those bland graphics and give your website the grapics it deserves! We craft extravagant graphics 
+                and illustrations for your website, app, or social media so you don't miss a chance of conversion!
+                "
                 btnCss={{ background: "linear-gradient(90deg, #F582AE 0%, #FFE600 157.01%)" }}
                 btnText="get quotation">
                 <img
@@ -39,7 +42,10 @@ const GraphicDesigning = () => {
 
             <Service
                 heading="custom icons"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
+                para="
+                Gift your website customized icons, designed specially to match with your website's theme to
+                enhance its looks my manifolds!
+                "
                 btnCss={{ background: "linear-gradient(90deg, #F582AE 0%, #FFE600 157.01%)" }}
                 btnText="get quotation">
                 <img
@@ -52,7 +58,9 @@ const GraphicDesigning = () => {
 
             <Service
                 heading="logo designing"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
+                para="
+                Get a professional-looking logo for your brand and improve your brand presence.
+                "
                 btnCss={{ background: "linear-gradient(90deg, #F582AE 0%, #FFE600 157.01%)" }}
                 btnText="get quotation">
                 <img

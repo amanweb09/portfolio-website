@@ -5,7 +5,6 @@ import SocialLinks from "../../components/contact/SocialLinks";
 import Navbar from '../../components/Navbar'
 import { useRouter } from 'next/router'
 import Success from "../../components/contact/Success";
-import sendEmail from "../../util/smtp";
 
 const index = () => {
 
@@ -39,12 +38,7 @@ const index = () => {
                     Accept: 'application/json'
                 }
             })
-            // await sendEmail({
-            //     from: "admin@webmon.com",
-            //     to: "amankhanna224466@gmail.com",
-            //     subject: `New inquiry from ${user.name}`,
-            //     text: `${user.email} : ${user.message}`
-            // })
+
             setNotificationType('success')
             setNotification(true)
 

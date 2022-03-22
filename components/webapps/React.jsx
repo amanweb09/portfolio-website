@@ -20,7 +20,9 @@ const React = () => {
 
 
             <p className="text-center text-gray-500 dark:text-gray-300 mt-2 sm:px-12 px-6 sm:text-base text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci, quos ullam quasi cumque ad veritatis! Praesentium, dolor laboriosam? Corrupti accusamus ea recusandae, laborum delectus blanditiis ducimus sit itaque, numquam id temporibus. Cum deserunt dolorum fugiat. Aut dolor vitae, labore, et deserunt facilis voluptate, doloribus nulla quisquam nostrum distinctio possimus.
+                We bring out commendable applications with the single-page application JS library - React. React is
+                super-easy to manage and is the most popular JavaScript library. We build applications on React as we
+                know how important speed is for acquiring customers and you'll get to see how fast a React website!
             </p>
 
             <Link href="/"><a className="mx-auto block dark:text-white w-max font-bold uppercase mt-6 hover:text-purple-500">

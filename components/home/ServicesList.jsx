@@ -15,7 +15,10 @@ const ServicesList = () => {
                 link="/services/webdev_apps"
                 btnText="View all web services"
                 heading="Website and app development"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et illum nobis ab beatae repudiandae, voluptas impedit architecto, maiores, neque explicabo fugiat debitis eum cum quisquam eligendi voluptatum. Minus, tempore praesentium. Fuga sapiente quas dolorem iure!">
+                para="
+                    Get a professional website built by professionals and enjoy incredible online presence with 99.5% up-time,
+                    attractive user interface, 24x7 expert support, and everything you expect from your website!
+                ">
 
                 <img
                     className="block mx-auto w-2/3 mb-6 mt-14"
@@ -33,7 +36,11 @@ const ServicesList = () => {
                         <span className="text-3xl font-bold text-pink-500 py-2 block hurricane">DESIGNING</span>
                         <span className="font-bold">To</span>
                         <span className="text-3xl font-bold text-cyan-500 py-2 block hurricane">PRODUCTION</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia blanditiis ut laborum eius architecto officia. Perspiciatis adipisci expedita deserunt recusandae, quod at! Ipsam earum aut magni similique consequatur et!
+
+                        Our clients sleep without worrying about anything, being it theme design, prototyping, layouting, 
+                        to taking it live on the internet as we understand 
+                        what our clients and their customers need and how the website should look like to get sky-scraping conversions.
+                        In short -  
                     </p>
 
                     <h2 className="my-6 font-bold dark:text-gray-200 text-gray-500 text-center sm:text-left uppercase">We'll handle everything!</h2>

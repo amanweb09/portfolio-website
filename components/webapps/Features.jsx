@@ -13,7 +13,8 @@ const Features = () => {
                         scalable
                     </h1>
                     <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
+                        We're with you even when you scale. The website and apps are incredibly scalable, so you
+                        can scale your website through micro-services and add new features like a doodle.
                     </p>
                 </div>
                 <div
@@ -24,7 +25,8 @@ const Features = () => {
                         easy management
                     </h1>
                     <p className="text-xs text-gray-500 text-center dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
+                        Built with clean code, it becomes extremely easy to manage your website. In addition, 
+                        you get an admin panel which helps you operate your website and app.
                     </p>
                 </div>
             </div>
@@ -38,7 +40,8 @@ const Features = () => {
                         24x7 <br /> support
                     </h1>
                     <p className="text-xs text-gray-500 text-center dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
+                        We're your tech companions. We'll take care of your website and solve even the minor of issues
+                        so you mint money seamlessly!
                     </p>
                 </div>
 
@@ -50,7 +53,8 @@ const Features = () => {
                         ssl + ddos <br /> protection
                     </h1>
                     <p className="text-xs text-gray-500 text-center dark:text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda molestiae aliquam totam nesciunt. In quibusdam sint, eos consectetur magni exercitationem, vel voluptates ratione est officia earum adipisci sapiente. Ullam!
+                        We emphasize security of our servers and thus, you get the most secure websites with SSL certificate and hacking attacks
+                        like DDOS, XSS, and many others.
                     </p>
                 </div>
             </div>

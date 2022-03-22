@@ -25,7 +25,10 @@ const seo = () => {
 
             <Service
                 heading="technical seo"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
+                para="
+                Rank higher on google by enahncing the technical SEO of your website using proven SEO strategies and
+                see your sales improving!
+                "
                 btnCss={{ background: "linear-gradient(90deg, #79CBCA 0%, #77A1D3 157.01%)" }}
                 btnText="get quotation">
                 <img
@@ -38,7 +41,10 @@ const seo = () => {
 
             <Service
                 heading="seo content development"
-                para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae blanditiis, commodi nihil et tempore quo nam fugiat ducimus. Officiis culpa eaque blanditiis qui ratione nesciunt aut molestiae sed dolorem!"
+                para="
+                    Our professional content developers will help you create content for your website, being it hero
+                    content, blog posts, articles, guest posts, business proposals, and much more.
+                "
                 btnCss={{ background: "linear-gradient(90deg, #79CBCA 0%, #77A1D3 157.01%)" }}
                 btnText="get quotation">
                 <img

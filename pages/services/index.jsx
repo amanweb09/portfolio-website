@@ -18,18 +18,24 @@ const index = () => {
                     link='/services/webdev_apps'
                     icon='/images/nodejs.png'
                     heading='web and app development'
-                    para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
+                    para="
+                    Professionally-built websites and iOS and Android mobile applications.
+                    " />
                 <ServicesBox
                     link='/services/graphic-designing'
                     icon='/images/ai-gd.png'
                     heading='graphic designing'
-                    para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
+                    para="
+                        Illustrations, icons, and other graphics for your website or app.
+                    " />
                 <ServicesBox
                     link='/services/seo'
                     size={{ width: '50%' }}
                     icon='/images/seo.png'
                     heading='seo'
-                    para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vel libero illo qui quae harum molestiae fugit maiores inventore labore." />
+                    para="
+                    Strategic website optimization for better reach and higher ranking.
+                    " />
             </main>
 
             <div className="mb-6 sm:mb-0">
