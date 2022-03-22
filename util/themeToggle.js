@@ -1,4 +1,4 @@
-export default theme => {
+const themeToggle = theme => {
     
     if (theme === 'dark') {
         document.documentElement.classList.add('dark')
@@ -14,3 +14,5 @@ export default theme => {
     window.localStorage.setItem('theme', 'light')
 
 }
+
+export default themeToggle
