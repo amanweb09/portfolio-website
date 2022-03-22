@@ -4,6 +4,7 @@ import '../styles/output.css'
 import themeToggle from '../util/themeToggle'
 import initFirebase from '../firebase/config'
 import AOS from 'aos'
+import Head from 'next/head'
 
 
 function MyApp({ Component, pageProps }) {
@@ -29,7 +30,12 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
+    <>
+      <Head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+      </Head>
       <Component {...pageProps} />
+    </>
   )
 }
 
