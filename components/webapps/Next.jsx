@@ -1,6 +1,10 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
 
 const Next = () => {
+
+    const router = useRouter()
 
     return (
         <div className="w-full sm:pt-20 pt-10 pb-6">
@@ -14,10 +18,12 @@ const Next = () => {
             <p className="text-center dark:text-gray-300 text-gray-500 mt-2 sm:px-12 px-6 sm:text-base text-sm">
                 Explore the power of the JS monster - Next.js, serving you with commendable features like SSG, SSR, super-simple
                 deployment, easy management, scalability, lightning-fast performance, and lots more. If you're looking for something
-                that is performance-oriented, Next.js is for you!   
+                that is performance-oriented, Next.js is for you!
             </p>
 
-            <Link href="/"><a className="mx-auto dark:text-white block w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a
+                onClick={() => router.push('/contact')}
+                className="mx-auto dark:text-white block w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire <span>&rsaquo;</span>
             </a></Link>
 

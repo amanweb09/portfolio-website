@@ -1,6 +1,10 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const React = () => {
+
+    const router = useRouter()
+
     return (
         <div className="w-full min-h-screen pt-16 pb-6">
             <img
@@ -25,7 +29,9 @@ const React = () => {
                 know how important speed is for acquiring customers and you'll get to see how fast a React website!
             </p>
 
-            <Link href="/"><a className="mx-auto block dark:text-white w-max font-bold uppercase mt-6 hover:text-purple-500">
+            <Link href="/"><a
+                onClick={() => router.push('/contact')}
+                className="mx-auto block dark:text-white w-max font-bold uppercase mt-6 hover:text-purple-500">
                 inquire &rsaquo;
             </a></Link>
 
