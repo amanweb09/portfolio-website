@@ -38,7 +38,7 @@ const Index = () => {
 
       <div
         data-aos="flip-up"
-        className="text-center font-bold sm:text-4xl text-2xl mt-4 small-text">
+        className="text-center font-bold sm:text-4xl text-2xl mt-4 small-text bg-gradient-to-r from-pink-500 to-cyan-500">
         WEB DEVELOPERS AND STARTUP ENTHUSIASTS
       </div>
 
@@ -91,7 +91,7 @@ const Index = () => {
             text-fill-color: transparent;
           }
           .small-text {
-            background: linear-gradient(180deg, #a0a0a0 0%, rgba(156, 156, 156, 0.53) 40.91%);
+            // background: linear-gradient(180deg, #a0a0a0 0%, rgba(156, 156, 156, 0.53) 40.91%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
