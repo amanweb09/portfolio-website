@@ -18,15 +18,15 @@ function MyApp({ Component, pageProps }) {
     })
     const theme = window.localStorage.getItem('theme')
 
-    if (!theme || theme === 'light') {
+    if (theme === 'light') {
       themeToggle(theme)
       return;
     }
-    if (theme === 'dark') {
+    if (theme === 'dark' || !theme) {
       themeToggle('dark')
       return;
     }
-    themeToggle('light')
+    themeToggle('dark')
   }, [])
 
   return (
