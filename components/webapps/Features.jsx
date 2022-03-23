@@ -1,9 +1,9 @@
 const Features = () => {
     return (
         <div
-            className="w-full relative sm:py-6 py-2 wrapper">
+            className="w-full relative h-max sm:py-6 py-2 wrapper">
 
-            <div className="w-full h-1/2 flex items-center justify-between my-6 px-2">
+            <div className="w-full flex items-center justify-between my-6 px-2">
                 <div
                     data-aos="flip-right"
                     style={{ minHeight: '25vh' }}
@@ -31,7 +31,7 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className="w-full h-1/2 flex items-center justify-between sm:mt-12 mt-8 px-2">
+            <div className="w-full flex items-center justify-between sm:mt-12 mt-8 px-2">
                 <div
                     style={{ minHeight: '25vh' }}
                     className="flex-center flex-col w-5/12">
@@ -72,7 +72,7 @@ const Features = () => {
                 {
                     `
                     .wrapper {
-                        min-height: 80vh;
+                        // min-height: 80vh;
                     }
                     .scalable {
         background: linear-gradient(180deg, #12ADCF 0%, #00576A 100%);
@@ -105,11 +105,11 @@ const Features = () => {
         text-fill-color: transparent;
     }
 
-    @media only screen and (max-width: 450px) {
-        .wrapper {
-            min-height: 120vh;
-        }
-    }
+    // @media only screen and (max-width: 450px) {
+    //     .wrapper {
+    //         min-height: 120vh;
+    //     }
+    // }
     `
                 }
             </style>
