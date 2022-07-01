@@ -17,6 +17,7 @@ const Index = () => {
     })
     const [notification, setNotification] = useState(false)
     const [notificationType, setNotificationType] = useState('')
+    const [loading, setLoading] = useState(false)
 
     function setInfo(name, value) {
         setUser({
@@ -32,13 +33,15 @@ const Index = () => {
         }
 
         try {
-            await axios.post(`${process.env.NEXT_PUBLIC_DB_URL}/contacts.json`, user, {
+            setLoading(true)
+            const { data } = await axios.post(`http://localhost:3000/api/contact`, user, {
                 headers: {
                     'Content-Type': 'application/json',
                     Accept: 'application/json'
                 }
             })
-           
+            
+            setLoading(false)
             setNotificationType('success')
             setNotification(true)
 
@@ -49,6 +52,7 @@ const Index = () => {
             })
 
         } catch (error) {
+            setLoading(false)
             console.log(error);
             setNotification(true)
             setNotificationType('error')
@@ -115,9 +119,20 @@ const Index = () => {
                 className="input sm:w-10/12 w-11/12 mt-2 block mx-auto h-56 sm:rounded-lg rounded-sm bg-white dark:text-white dark:bg-slate-600 p-4" />
 
             <button
+                disabled={loading ? true : false}
                 onClick={submitForm}
                 className="btn w-64 h-12 font-bold text-white mt-12 mb-6 block mx-auto">
-                SUBMIT
+                {
+                    !loading ?
+                        <>SUBMIT</>
+                        :
+                        <div className="w-full h-full flex-center">
+                                <div className="loader w-8 h-8">
+
+                                </div>
+                        </div>
+                }
+
             </button>
 
             <style jsx>
@@ -136,6 +151,18 @@ const Index = () => {
                 .btn {
                     background: linear-gradient(89.82deg, #CF1512 23.02%, #AE00A7 68.17%)
                 }
+                .loader {
+                    border: 6px solid white;
+                    border-top: 6px solid transparent;
+                    border-radius: 50%;
+                    animation: loading 1s infinite linear;
+                }
+                @keyframes loading {
+                    100% {
+                        transform: rotate(360deg)
+                    }
+                }
+
                @media only screen and (max-width: 450px) {
                    .input {
                        box-shadow: none;

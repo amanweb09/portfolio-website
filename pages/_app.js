@@ -10,7 +10,7 @@ import Head from 'next/head'
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
-    initFirebase()
+    // initFirebase()
     AOS.init({
       delay: 0,
       duration: 400,
