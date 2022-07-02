@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar'
 import { useState } from 'react'
 import axios from 'axios'
 
-const login = () => {
+const Login = () => {
 
     const [user, setUser] = useState({
         email: '',
@@ -65,4 +65,4 @@ const login = () => {
     );
 }
 
-export default login;
+export default Login
