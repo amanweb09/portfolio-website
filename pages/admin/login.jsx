@@ -1,5 +1,6 @@
 import Navbar from '../../components/Navbar'
 import { useState } from 'react'
+import axios from 'axios'
 
 const login = () => {
 
@@ -13,6 +14,16 @@ const login = () => {
             ...user,
             [name]: value
         })
+    }
+
+    async function loginUser(e) {
+        e.preventDefault()
+        try {
+            const { data } = await axios.post('http://localhost:3000/api/login', user)
+            console.log(data);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
@@ -42,7 +53,11 @@ const login = () => {
                             className='w-11/12 bg-white focus:bg-yellow-100 text-center h-10'
                             type="password" />
 
-                        <button className='mt-12 bg-yellow-500 hover:bg-yellow-600 font-bold w-11/12 h-12'>Login</button>
+                        <button
+                            onClick={loginUser}
+                            className='mt-12 bg-yellow-500 hover:bg-yellow-600 font-bold w-11/12 h-12'>
+                            Login
+                        </button>
                     </form>
                 </div>
             </div>
